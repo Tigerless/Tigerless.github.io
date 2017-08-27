@@ -1,13 +1,13 @@
 *{padding: 0;margin: 0;}
 .slider{
-    width: 1387px;
+    width: 1423px;
     height: 490px;
     position: relative;
     overflow: hidden;
     margin: 0 auto;
 }
 .slider img{
-    width: 1387px;
+    width: 1423px;
     height: 490px;
 }
 .slider .content{
