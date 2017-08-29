@@ -14,7 +14,7 @@ function animate(element,target){
 }
 window.onload =function(){
     var ul = document.getElementsByTagName('ul')[0];
-    var spanArr = document.getElementsByClassName('control').item(0).getElementsByTagName('span');
+    var spanArr = document.getElementsByClassName('control')[0].getElementsByTagName('span');
     //4.最后一张显示后，克隆第一张图片继续显示第一张
     ul.appendChild(ul.children[0].cloneNode(true));
     var ulLeft = ul.offsetLeft;
