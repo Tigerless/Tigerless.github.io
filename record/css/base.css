@@ -12,6 +12,7 @@ table { border-collapse:collapse; }
 #header{
     background-color: #2f3e45;
     height: 80px;
+    min-width: 1423px;
 }
 *{
     box-sizing: border-box;

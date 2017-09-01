@@ -85,6 +85,7 @@ h3{
     background: url(../images/news-bg.jpg) center no-repeat #d3d3d3;
     margin: 0 auto;
     height: 125px;
+    min-width: 1423px;
 }
 .search-bg-container{
     margin: 0 auto;
