@@ -274,6 +274,7 @@ a.link-card:hover{
 .footer{
     background-color: #dcdcc5;
     height: 300px;
+    width: 100%;
 }
 .footer-main{
     height: 75%;
