@@ -29,7 +29,7 @@ window.onload =function(){
             ul.style.left = '0';
             ulLeft = 0;
         }
-        ulLeft -= 1423;
+        ulLeft -= 1500;
         // console.log(ulLeft);
         animate(ul, ulLeft);
         ulIndex++;
@@ -46,7 +46,7 @@ window.onload =function(){
         span.index = i;
         span.onclick = function(){
             //实现点击span后图片移动
-            var targetLeft = -1423 * this.index; //0 - 4
+            var targetLeft = -1500 * this.index; //0 - 4
             //点击后自动滚动到 当前圆点对应的图片的位置  即左移800*下标
             animate(ul, targetLeft);
             //记录此时的ulLeft ulIndex 为了继续从当前点击图片向下一张图片移动
