@@ -5,6 +5,12 @@ header{
 body{
     /*background-color: #000;*/
 }
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('fonts/EOT/SourceSansPro-Regular.eot');
+    src: url('fonts/TTF/SourceSansPro-Regular.ttf') format('truetype');
+    src: url('fonts/SVG/SourceSansPro-Regular.svg#NeuesBauenDemo') format('svg');
+}
 
 .head{
     height: 64px;
@@ -72,7 +78,7 @@ i:hover{
     top:-10px;
 }
 .bg_content{
-    background: url(../images/bg2.png) center top repeat;
+    background: #000 url(../images/bg2.png) center top repeat;
     background-size: 1201px;
     min-width: 934px;
 }
@@ -88,16 +94,21 @@ i:hover{
     text-align: center;
     margin: 97px 0 0 0;
 }
+.head_content img{
+    width: 200px;
+    margin: 32px 0 50px 0;
+}
 .head_content h4{
-    font-size: 19px;
+    font-size: 16px;
     margin: 18px;
     color: rgba(77,120,162,0.54);
 
 }
 .head_content h5{
-    font-size: 19px;
-    margin: 18px;
+    font-size: 13px;
+    margin: 10px;
     color: #d8dfe6;
+    font-family: "Microsoft YaHei UI Light";
 }
 
 .main_container{
@@ -131,13 +142,13 @@ i:hover{
 }
 .content1_left h4{
     color: #4d78a2;
-    font-size: 10px;
-    margin: 68px 0 0 20px;
+    font-size: 18px;
+    margin: 78px 0 0 20px;
 
 }
 .content1_left h5{
     color: #d8dfe6;
-    font-size: 10px;
+    font-size: 14px;
     margin: 68px 0 0 20px;
 
 }
@@ -189,6 +200,20 @@ i:hover{
     left: 240px;
     position: absolute;
 }
+.content2_left h4{
+    color: #4d78a2;
+    font-size: 18px;
+    margin: 108px 0 0 20px;
+
+}
+.content2_left h5{
+    color: #d8dfe6;
+    font-size: 14px;
+    margin: 68px 0 0 20px;
+
+
+}
+
 .content2_right{
     margin: 0 20px 0 0;
     width: 467px;
@@ -221,23 +246,23 @@ i:hover{
 }
 .content3_right hr{
     width: 100%;
-    margin: 10px 0 0 20px;
+    margin: 51px 0 0 20px;
 }
 .content3_right h3{
     color: #d8dfe6;
-    font-size: 10px;
+    font-size: 13px;
     margin: 68px 0 0 20px;
 
 }
 .content3_right h4{
     color: #4d78a2;
-    font-size: 10px;
+    font-size: 18px;
     margin: 68px 0 0 20px;
 
 }
 .content3_right h5{
     color: #d8dfe6;
-    font-size: 10px;
+    font-size: 13px;
     margin: 68px 0 0 20px;
 
 }
@@ -254,13 +279,13 @@ i:hover{
 }
 .content4_left h4{
     color: #4d78a2;
-    font-size: 10px;
+    font-size: 18px;
     margin: 68px 0 0 20px;
 
 }
 .content4_left h5{
     color: #d8dfe6;
-    font-size: 10px;
+    font-size: 14px;
     margin: 68px 0 0 20px;
 
 }
