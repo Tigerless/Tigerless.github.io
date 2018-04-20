@@ -11,6 +11,7 @@ var content3_code2_view = true;
 
 var content4_code1_view = true;
 var content4_code2_view = true;
+var content4_code3_view = true;
 
 window.onscroll = function() {
 
@@ -88,54 +89,81 @@ window.onscroll = function() {
         if(scrollY > 1117 && scrollY < 1917){
             if(scrollY < 1317){
                 animate3_top = (scrollY - 1117) / 200 * 231
+                $("#content3_code1").stop(true,true);
+                $("#content3_code2").stop(true,true);
+
                 $("#content3_code1").animate({
                     top: -animate3_top + "px",
                 }, 5);
             }
+
             if(scrollY > 1517 && content3_code1_view == true){
-                $("#content3_code1").fadeTo(200,0);
+                $("#content3_code1").stop(true,true);
+                $("#content3_code2").stop(true,true);
+
+                $("#content3_code1").fadeTo(500,0);
                 content3_code1_view = false
             }
             if(scrollY < 1517 && content3_code1_view == false){
-                $("#content3_code1").fadeTo(200,1);
+                $("#content3_code1").stop(true,true);
+                $("#content3_code2").stop(true,true);
+
+                $("#content3_code1").fadeTo(500,1);
                 content3_code1_view = true
             }
 
             if(scrollY > 1717 && content3_code2_view == true){
-                $("#content3_code2").fadeTo(200,0);
+                $("#content3_code1").stop(true,true);
+                $("#content3_code2").stop(true,true);
+
+                $("#content3_code2").fadeTo(500,0);
                 content3_code2_view = false
             }
             if(scrollY < 1717 && content3_code2_view == false){
-                $("#content3_code2").fadeTo(200,1);
+                $("#content3_code1").stop(true,true);
+                $("#content3_code2").stop(true,true);
+
+                $("#content3_code2").fadeTo(500,1);
                 content3_code2_view = true
             }
         }
 
         //1717--2384
         //animate4
-        if(scrollY > 1712 && scrollY < 2412){
-
-            if(scrollY > 1837 && content4_code1_view == true){
-                $("#content4_code1").fadeTo(500,0);
-                content4_code1_view = false
+        if(scrollY > 1612 && scrollY < 2412){
+            if(scrollY > 1612 && scrollY < 1887){
+                // console.log("ojbk")
+                if (content4_code1_view == true && content4_code2_view == true){
+                    $("#content4_code2").fadeTo(1,0);
+                    $("#content4_code1").fadeTo(1,0);
+                }
             }
-            if(scrollY < 1837 && content4_code1_view == false){
-                $("#content4_code1").fadeTo(500,1);
-                content3_code1_view = true
+
+            if(scrollY > 1887 && content4_code3_view == true){
+                $("#content4_code3").fadeTo(500,0);
+                $("#content4_code2").fadeTo(500,1);
+                content4_code3_view = false
+            }
+            if(scrollY < 1887 && content4_code3_view == false){
+                $("#content4_code3").fadeTo(500,1);
+                content4_code3_view = true
             }
 
             if(scrollY > 2062 && content4_code2_view == true){
                 $("#content4_code2").fadeTo(500,0);
+                $("#content4_code1").fadeTo(1,1);
+
                 content4_code2_view = false
             }
-            if(scrollY < 2062 && content3_code2_view == false){
+            if(scrollY < 2062 && content4_code2_view == false){
                 $("#content4_code2").fadeTo(500,1);
+                $("#content4_code1").fadeTo(1,0);
                 content4_code2_view = true
             }
 
-            if(scrollY < 2412){
-                animate4_top = (scrollY - 2062) / 175 * 628
-                $("#content4_code3").animate({
+            if(scrollY > 2062 && scrollY < 2237){
+                animate4_top = (scrollY - 2062) / 175 * 528//878-350
+                $("#content4_code1").animate({
                     top: -animate4_top + "px",
                 }, 5);
             }

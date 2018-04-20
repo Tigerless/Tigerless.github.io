@@ -52,7 +52,7 @@ i:hover{
 }
 
 .main_head{
-    background: url(../images/bg1.png) center no-repeat;
+    background: url(../images/bg1.jpg) center no-repeat;
 
     overflow: hidden;
     min-width: 1034px;
@@ -78,7 +78,7 @@ i:hover{
     top:-10px;
 }
 .bg_content{
-    background: #000 url(../images/bg2.png) center top repeat;
+    background: #000 url(../images/bg2.jpg) center top repeat;
     background-size: 1201px;
     min-width: 1034px;
 }
@@ -208,7 +208,7 @@ i:hover{
 
 }
 .codeframe{
-    background: url(../images/codeframe.png)  top no-repeat;
+    background: url(../images/codeframe.jpg)  top no-repeat;
     width: 519px;
     height: 373px;
     /*overflow: hidden;*/
@@ -234,7 +234,6 @@ i:hover{
     position: absolute;
     top:1px;
     left:1px;
-
 }
 .codeframe_container img:nth-child(2){
     /*display: none;*/
@@ -286,7 +285,7 @@ i:hover{
     margin: 0 20px 0 0;
 }
 .content3_codeframe{
-    background: url(../images/codeframe.png)  top no-repeat;
+    background: url(../images/codeframe.jpg)  top no-repeat;
     width: 519px;
     height: 373px;
     /*overflow: hidden;*/
@@ -362,7 +361,7 @@ i:hover{
     /*margin: 0 20px 0 0;*/
 }
 .content4_codeframe{
-    background: url(../images/codeframe.png)  top no-repeat;
+    background: url(../images/codeframe.jpg)  top no-repeat;
     width: 519px;
     height: 373px;
     /*overflow: hidden;*/
