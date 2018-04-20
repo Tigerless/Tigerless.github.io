@@ -8,8 +8,9 @@ body{
 @font-face {
     font-family: 'source_sans_pro';
     src: url('fonts/EOT/SourceSansPro-Regular.eot');
+    src: url('fonts/OTF/SourceSansPro-Regular.otf');
     src: url('fonts/TTF/SourceSansPro-Regular.ttf') format('truetype');
-    src: url('fonts/SVG/SourceSansPro-Regular.svg#NeuesBauenDemo') format('svg');
+    /*src: url('fonts/SVG/SourceSansPro-Regular.svg#NeuesBauenDemo') format('svg');*/
 }
 
 .head{
@@ -108,7 +109,7 @@ i:hover{
     font-size: 13px;
     margin: 10px;
     color: #d8dfe6;
-    font-family: "Microsoft YaHei UI Light";
+    /*font-family: "Microsoft YaHei UI Light";*/
 }
 
 .main_container{
