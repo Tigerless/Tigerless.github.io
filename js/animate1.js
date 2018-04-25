@@ -19,7 +19,7 @@ window.onscroll = function() {
 
         //animate1
         var scrollY = window.scrollY;
-        console.info(scrollY);
+        // console.info(scrollY);
         if (scrollY < 500) {
 
                 var alpha = 1 - scrollY / 400;
@@ -36,7 +36,7 @@ window.onscroll = function() {
                     left: -126 + width_reduce / 2 + 'px',
                     top: 23 + refer_reduce + 'px',
                     width: (1440 - width_reduce) + 'px'
-                }, 20);
+                }, 5);
 
         }
 
