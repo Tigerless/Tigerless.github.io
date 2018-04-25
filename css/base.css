@@ -42,8 +42,8 @@ table { border-collapse:collapse; }
     box-sizing: border-box;
 }
 .icon{
-    width: 1.2em;
-    height: 1.2em;
+    width: 2.2em;
+    height: 2.2em;
     vertical-align: -0.15em;
     fill: currentColor;
     overflow: hidden;

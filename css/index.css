@@ -22,7 +22,7 @@ body{
     z-index: 10;
 }
 .head_container{
-    width: 1034px;
+    width: 1180px;
     margin: 0 auto;
 
 }
@@ -36,10 +36,15 @@ body{
 }
 .head_container_right{
     float: right;
-    width: 400px;
+    width: 345px;
     display: flex;
     justify-content: space-between;
     margin: 20px 0 0 0;
+}
+.icons{
+    width: 154px;
+    display: flex;
+    justify-content: space-between;
 }
 .head_container_right a:hover{
     color: #4d78a2;
@@ -49,23 +54,23 @@ i:hover{
 }
 .nav_link{
     color: #FFF;
-    size: 10px;
+    font-size: 19px;
 }
 
 .main_head{
-    background: url(../images/bg1.jpg) center no-repeat;
-
+    background: url(../images/bg1.jpg) center  no-repeat;
     overflow: hidden;
-    min-width: 1034px;
+    min-width: 1180px;
     /*text-align: center;*/
     position: relative;
 }
 .bg2_container{
     /*text-align: center;*/
     position: relative;
-    width: 1034px;
+    width: 1180px;
     overflow: visible;
     margin: 0 auto;
+    text-align: center;
 }
 .bg{
     position: absolute;
@@ -73,48 +78,48 @@ i:hover{
 }
 #ball_nebula{
     position: absolute;
-    width: 1201px;
+    /*width: 1201px;*/
     z-index: 1;
-    left: -86px;
-    top:-10px;
+    /*left: -86px;-13px*/
+    left: -126px;
+    top: 23px;
 }
 .bg_content{
     background: #000 url(../images/bg2.jpg) center top repeat;
     background-size: 1201px;
-    min-width: 1034px;
+    min-width: 1180px;
 }
 .main_head_container{
-    height: 640px;
-    padding-top: 23px;
-    margin: 0 auto;
-    width: 1034px;
+    height: 804px;
+    margin: -1px auto;
+    min-width: 1180px;
+    padding: 1px;
     position: relative;
     z-index: 2;
 }
 .head_content{
     text-align: center;
-    margin: 97px 0 0 0;
+    margin: 171px 0 0 0;
 }
 .head_content img{
-    width: 200px;
-    margin: 32px 0 50px 0;
+    /*width: 200px;*/
+    margin: 48px 0 71px 0;;
 }
 .head_content h4{
-    font-size: 16px;
+    font-size: 26px;
     margin: 18px;
-    color: rgba(77,120,162,0.54);
+    color: rgba(77,120,162,0.70);
 
 }
 .head_content h5{
-    font-size: 13px;
+    font-size: 16px;
     margin: 10px;
     color: #d8dfe6;
-    /*font-family: "Microsoft YaHei UI Light";*/
 }
 
 .main_container{
     margin: 0 auto;
-    width: 1034px;
+    width: 1180px;
     display: flex;
     justify-content: center;
 }
@@ -315,6 +320,7 @@ i:hover{
     color: #d8dfe6;
     font-size: 13px;
     margin: 68px 0 0 20px;
+    font-style: italic;
 
 }
 
@@ -337,7 +343,7 @@ i:hover{
     color: #d8dfe6;
     font-size: 10px;
     margin: 2px 0 0 20px;
-
+    font-style: italic;
 }
 
 .content4_left{

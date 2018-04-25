@@ -33,9 +33,9 @@ window.onscroll = function() {
                 }
                 $("#main_head").fadeTo(30, alpha);
                 $("#ball_nebula").animate({
-                    left: -86 + width_reduce / 2 + 'px',
-                    top: -10 + refer_reduce + 'px',
-                    width: (1201 - width_reduce) + 'px'
+                    left: -126 + width_reduce / 2 + 'px',
+                    top: 23 + refer_reduce + 'px',
+                    width: (1440 - width_reduce) + 'px'
                 }, 20);
 
         }
