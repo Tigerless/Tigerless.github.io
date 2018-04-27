@@ -18,24 +18,28 @@ var alpha3 = 1;
 var alpha4 = 1;
 var alpha5 = 1;
 
+var width_reduce = 0;
+var height_reduce = 0;
+var refer_reduce = 0;//相对点减少度
+
 window.onscroll = function() {
 
     $(document).ready(function () {
 
         //animate1
         var scrollY = window.scrollY;
-        // console.info(scrollY);
+        console.info(scrollY);
         if (scrollY < 500) {
 
                 // alpha = 1 - scrollY / 400;
-                alpha1 = 1 - scrollY / 400;
-                alpha2 = 1 - scrollY / 440;
-                alpha3 = 1 - scrollY / 550;
-                alpha4 = 1 - scrollY / 650;
-                alpha5 = 1 - scrollY / 700;
-                var width_reduce = scrollY / 4 * 3;
-                var height_reduce = width_reduce / 19*8;
-                var refer_reduce = height_reduce * 5 / 7;//相对点减少度
+                alpha1 = 1 - scrollY / 172;
+                alpha2 = 1 - (scrollY -172) / 222;
+                alpha3 = 1 - (scrollY - 354) / 132;
+                // alpha4 = 1 - scrollY / 650;
+                // alpha5 = 1 - scrollY / 700;
+                width_reduce = scrollY / 4 * 3;
+                height_reduce = width_reduce / 19*8;
+                refer_reduce = height_reduce * 5 / 7;//相对点减少度
                 // console.log('h12:'+scrollY);
                 // head animate :506为不动点，1440*717高度
                 if (alpha1 < 0) {
@@ -47,17 +51,26 @@ window.onscroll = function() {
                 if (alpha3 < 0) {
                     alpha3 = 0
                 }
-                if (alpha4 < 0) {
-                    alpha4 = 0
+                if(scrollY < 172){
+                    alpha2 = 1
                 }
-                if (alpha5 < 0) {
-                    alpha5 = 0
+                if(scrollY < 354){
+                    alpha3 = 1
+
                 }
+                // if (alpha4 < 0) {
+                //     alpha4 = 0
+                // }
+                // if (alpha5 < 0) {
+                //     alpha5 = 0
+                // }
                 $("#main_head1").fadeTo(5, alpha1);
-                $("#main_head2").fadeTo(5, alpha2);
-                $("#main_head3").fadeTo(5, alpha3);
-                $("#main_head4").fadeTo(5, alpha4);
-                $("#main_head5").fadeTo(5, alpha5);
+                $("#main_head2").fadeTo(5, alpha1);
+
+                $("#main_head3").fadeTo(5, alpha2);
+                $("#main_head4").fadeTo(5, alpha3);
+                $("#main_head5").fadeTo(5, alpha3);
+
 
                 $("#ball_nebula").animate({
                     left: -372 + width_reduce / 2 + 'px',
