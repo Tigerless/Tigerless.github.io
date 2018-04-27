@@ -24,7 +24,7 @@ window.onscroll = function() {
 
                 var alpha = 1 - scrollY / 400;
                 var width_reduce = scrollY / 4 * 3;
-                var height_reduce = width_reduce / 2;
+                var height_reduce = width_reduce / 19*8;
                 var refer_reduce = height_reduce * 5 / 7;//相对点减少度
                 // console.log('h12:'+scrollY);
                 // head animate :506为不动点，1440*717高度
@@ -33,9 +33,9 @@ window.onscroll = function() {
                 }
                 $("#main_head").fadeTo(30, alpha);
                 $("#ball_nebula").animate({
-                    left: -126 + width_reduce / 2 + 'px',
+                    left: -372 + width_reduce / 2 + 'px',
                     top: 23 + refer_reduce + 'px',
-                    width: (1440 - width_reduce) + 'px'
+                    width: (1920 - width_reduce) + 'px'
                 }, 5);
 
         }

@@ -3,7 +3,7 @@ header{
 
 }
 body{
-    /*background-color: #000;*/
+    background-color: #101216;
 }
 @font-face {
     font-family: 'source_sans_pro';
@@ -48,6 +48,8 @@ body{
 }
 .head_container_right a:hover{
     color: #4d78a2;
+    /*font-size: 20px;*/
+
 }
 i:hover{
     color: #4d78a2;
@@ -58,7 +60,7 @@ i:hover{
 }
 
 .main_head{
-    background: url(../images/bg1.jpg) center  no-repeat;
+    /*background: #101216;*/
     overflow: hidden;
     min-width: 1180px;
     /*text-align: center;*/
@@ -81,7 +83,7 @@ i:hover{
     /*width: 1201px;*/
     z-index: 1;
     /*left: -86px;-13px*/
-    left: -126px;
+    left: -372px;
     top: 23px;
 }
 .bg_content{
@@ -103,7 +105,7 @@ i:hover{
 }
 .head_content img{
     /*width: 200px;*/
-    margin: 48px 0 71px 0;;
+    margin: 23px 0 38px 0;
 }
 .head_content h4{
     font-size: 26px;
@@ -133,7 +135,7 @@ i:hover{
 }
 .main_content3{
     background-color: rgba(24,48,65,0.15);
-    height: 567px;
+    height: 643px;
 
 }
 .main_content4{
@@ -186,8 +188,8 @@ i:hover{
     position: absolute;
 }
 .content1_right img:nth-child(2){
-    top: 78px;
-    left: 100px;
+    top: 88px;
+    left: 138px;
     position: absolute;
 }
 .img_bg img:nth-child(1){
@@ -294,7 +296,7 @@ i:hover{
     width: 519px;
     height: 373px;
     /*overflow: hidden;*/
-    margin: 74px 0 0 0;
+    margin: 130px 0 0 0;
     position: relative;
     padding: 12px 0 12px 36px;
 }
@@ -306,7 +308,7 @@ i:hover{
 
 /*}*/
 .content3_right{
-    width: 566px;
+    width: 607px;
     padding: 30px 20px 0 30px;
     overflow: visible;
 }
@@ -390,7 +392,7 @@ i:hover{
 .main_tail_container{
     margin: 0 auto;
     padding: 95px 0;
-    width:691px;
+    width:867px;
 
 }
 .main_tail_container h1{
@@ -407,8 +409,8 @@ i:hover{
 
 }
 .tail_img_box img{
-    width: 93px;
-    height: 93px;
+    width: 117px;
+    height: 117px;
 
 }
 .copyright{
