@@ -3,7 +3,7 @@ header{
 
 }
 body{
-    background-color: #101216;
+    background-color: #fff;
 }
 @font-face {
     font-family: 'source_sans_pro';
@@ -20,7 +20,6 @@ body{
     /*display: block;*/
     position: fixed;
     z-index: 10;
-    box-shadow: 4px 4px 30px #1b2d43;
 }
 .head_container{
     width: 1180px;
@@ -103,7 +102,6 @@ i:hover{
 .head_content{
     text-align: center;
     margin: 171px 0 0 0;
-
 }
 .head_content img{
     /*width: 200px;*/
@@ -126,14 +124,6 @@ i:hover{
     width: 1180px;
     display: flex;
     justify-content: space-between;
-}
-@media screen and (max-width:960px) {
-    .main_container{
-        margin: 0 auto;
-        width: 680px;
-        display: flex;
-        justify-content: space-between;
-    }
 }
 .main_content1{
     background-color: rgba(24,48,65,0.15);
@@ -193,12 +183,12 @@ i:hover{
 }
 
 .content1_right img:nth-child(1){
-    top: 110px;
-    left: 171px;
+    top: 90px;
+    left: 160px;
     position: absolute;
 }
 .content1_right img:nth-child(2){
-    top: 112px;
+    top: 88px;
     left: 138px;
     position: absolute;
 }
@@ -290,10 +280,10 @@ i:hover{
 }
 
 /*.content2_right img{*/
-    /*width: 440px;*/
-    /*position: absolute;*/
-    /*top: 1px;*/
-    /*right: -1px;*/
+/*width: 440px;*/
+/*position: absolute;*/
+/*top: 1px;*/
+/*right: -1px;*/
 /*}*/
 
 
@@ -311,10 +301,10 @@ i:hover{
     padding: 12px 0 12px 36px;
 }
 /*.content3_left img{*/
-    /*position: relative;*/
-    /*top: 103px;*/
-    /*!*right: -31px;*!*/
-    /*width: 486px;*/
+/*position: relative;*/
+/*top: 103px;*/
+/*!*right: -31px;*!*/
+/*width: 486px;*/
 
 /*}*/
 .content3_right{

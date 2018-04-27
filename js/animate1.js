@@ -12,6 +12,11 @@ var content3_code2_view = true;
 var content4_code1_view = true;
 var content4_code2_view = true;
 var content4_code3_view = true;
+var alpha1 = 1;
+var alpha2 = 1;
+var alpha3 = 1;
+var alpha4 = 1;
+var alpha5 = 1;
 
 window.onscroll = function() {
 
@@ -22,16 +27,38 @@ window.onscroll = function() {
         // console.info(scrollY);
         if (scrollY < 500) {
 
-                var alpha = 1 - scrollY / 400;
+                // alpha = 1 - scrollY / 400;
+                alpha1 = 1 - scrollY / 400;
+                alpha2 = 1 - scrollY / 440;
+                alpha3 = 1 - scrollY / 550;
+                alpha4 = 1 - scrollY / 650;
+                alpha5 = 1 - scrollY / 700;
                 var width_reduce = scrollY / 4 * 3;
                 var height_reduce = width_reduce / 19*8;
                 var refer_reduce = height_reduce * 5 / 7;//相对点减少度
                 // console.log('h12:'+scrollY);
                 // head animate :506为不动点，1440*717高度
-                if (alpha < 0) {
-                    alpha = 0
+                if (alpha1 < 0) {
+                    alpha1 = 0
                 }
-                $("#main_head").fadeTo(30, alpha);
+                if (alpha2 < 0) {
+                    alpha2 = 0
+                }
+                if (alpha3 < 0) {
+                    alpha3 = 0
+                }
+                if (alpha4 < 0) {
+                    alpha4 = 0
+                }
+                if (alpha5 < 0) {
+                    alpha5 = 0
+                }
+                $("#main_head1").fadeTo(5, alpha1);
+                $("#main_head2").fadeTo(5, alpha2);
+                $("#main_head3").fadeTo(5, alpha3);
+                $("#main_head4").fadeTo(5, alpha4);
+                $("#main_head5").fadeTo(5, alpha5);
+
                 $("#ball_nebula").animate({
                     left: -372 + width_reduce / 2 + 'px',
                     top: 23 + refer_reduce + 'px',

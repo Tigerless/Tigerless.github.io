@@ -1,14 +1,2 @@
 
 
-
-@keyframes myfirst
-{
-    from {transform: rotate(21deg);}
-    to {transform: rotate(121deg);}
-}
-
-/*@-webkit-keyframes myfirst !* Safari 与 Chrome *!*/
-/*{*/
-    /*from {rotate:21deg;}*/
-    /*to {rotate:121deg;}*/
-/*}*/
