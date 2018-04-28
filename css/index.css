@@ -4,6 +4,9 @@ header{
 }
 body{
     background-color: #101216;
+    min-width: 1180px;
+
+
 }
 @font-face {
     font-family: 'source_sans_pro';
@@ -11,6 +14,7 @@ body{
     src: url('fonts/OTF/SourceSansPro-Regular.otf');
     src: url('fonts/TTF/SourceSansPro-Regular.ttf') format('truetype');
     /*src: url('fonts/SVG/SourceSansPro-Regular.svg#NeuesBauenDemo') format('svg');*/
+
 }
 
 .head{
@@ -18,15 +22,21 @@ body{
     background-color: rgba(32,60,91,0.65);
     width: 100%;
     /*display: block;*/
+    min-width: 1180px;
     position: fixed;
     z-index: 10;
     box-shadow: 4px 4px 30px #1b2d43;
+    /*overflow:auto;*/
+
 }
 .head_container{
     width: 1180px;
     margin: 0 auto;
 
 }
+
+
+
 .head_container_left{
     float: left;
 }
@@ -63,7 +73,7 @@ i:hover{
 .main_head{
     /*background: #101216;*/
     overflow: hidden;
-    min-width: 1180px;
+    /*min-width: 1180px;*/
     /*text-align: center;*/
     position: relative;
 }
@@ -81,7 +91,7 @@ i:hover{
 }
 #ball_nebula{
     position: absolute;
-    /*width: 1201px;*/
+    width: 1920px;
     z-index: 1;
     /*left: -86px;-13px*/
     left: -372px;
@@ -90,12 +100,12 @@ i:hover{
 .bg_content{
     background: #000 url(../images/bg2.jpg) center top repeat;
     background-size: 1201px;
-    min-width: 1180px;
+    /*min-width: 1180px;*/
 }
 .main_head_container{
     height: 804px;
     margin: -1px auto;
-    min-width: 1180px;
+    /*min-width: 1180px;*/
     padding: 1px;
     position: relative;
     z-index: 2;
@@ -127,14 +137,21 @@ i:hover{
     display: flex;
     justify-content: space-between;
 }
-@media screen and (max-width:960px) {
-    .main_container{
-        margin: 0 auto;
-        width: 680px;
-        display: flex;
-        justify-content: space-between;
-    }
-}
+
+
+
+/*@media screen and (max-width:960px) {*/
+    /*.main_container{*/
+        /*margin: 0 auto;*/
+        /*width: 680px;*/
+        /*display: flex;*/
+        /*justify-content: space-between;*/
+    /*}*/
+
+/*}*/
+
+
+
 .main_content1{
     background-color: rgba(24,48,65,0.15);
     height: 500px;

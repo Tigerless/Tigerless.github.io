@@ -12,15 +12,29 @@ var content3_code2_view = true;
 var content4_code1_view = true;
 var content4_code2_view = true;
 var content4_code3_view = true;
+
 var alpha1 = 1;
 var alpha2 = 1;
 var alpha3 = 1;
-var alpha4 = 1;
-var alpha5 = 1;
+// var alpha4 = 1;
+// var alpha5 = 1;
 
 var width_reduce = 0;
 var height_reduce = 0;
 var refer_reduce = 0;//相对点减少度
+
+var w = document.documentElement.scrollWidth || document.body.scrollWidth;
+var h = document.documentElement.scrollHeight || document.body.scrollHeight;
+
+console.info(w,h);
+var b1_width = 1920;
+var b1_left = -372;
+
+if(w <= 640){
+    b1_width = 1040;
+    b1_left = -214;
+}
+
 
 window.onscroll = function() {
 
@@ -28,7 +42,7 @@ window.onscroll = function() {
 
         //animate1
         var scrollY = window.scrollY;
-        console.info(scrollY);
+        // console.info(scrollY);
         if (scrollY < 500) {
 
                 // alpha = 1 - scrollY / 400;
@@ -73,9 +87,9 @@ window.onscroll = function() {
 
 
                 $("#ball_nebula").animate({
-                    left: -372 + width_reduce / 2 + 'px',
+                    left: b1_left + width_reduce / 2 + 'px',
                     top: 23 + refer_reduce + 'px',
-                    width: (1920 - width_reduce) + 'px'
+                    width: (b1_width - width_reduce) + 'px'
                 }, 5);
 
         }
