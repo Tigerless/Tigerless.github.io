@@ -94,8 +94,8 @@ i:hover{
     position: absolute;
     z-index: 1;
     /*left: -86px;-13px*/
-    left: -214px;
-    top: 23px;
+    left: -199px;
+    top: 101px;
     width: 1040px;
 }
 .bg_content{
@@ -104,7 +104,7 @@ i:hover{
     /*min-width: 640px;*/
 }
 .main_head_container{
-    height: 804px;
+    height: 624px;
     margin: -1px auto;
     /*min-width: 640px;*/
     padding: 1px;
@@ -113,12 +113,12 @@ i:hover{
 }
 .head_content{
     text-align: center;
-    margin: 171px 0 0 0;
+    margin: 156px 0 0 0;
 
 }
 .head_content img{
-    /*width: 200px;*/
-    margin: 23px 0 38px 0;
+    width: 150px;
+    margin: 23px 0 111px 0;
 }
 .head_content h4{
     font-size: 21px;
@@ -128,7 +128,7 @@ i:hover{
 }
 .head_content h5{
     font-size: 16px;
-    margin: 10px;
+    margin: 0;
     color: #d8dfe6;
 }
 
@@ -248,7 +248,7 @@ i:hover{
     width: 519px;
     height: 373px;
     /*overflow: hidden;*/
-    margin: 74px 0 0 0;
+    margin: 74px 0 0 20px;
     position: relative;
     padding: 12px 0 12px 36px;
 }
@@ -326,7 +326,7 @@ i:hover{
     width: 519px;
     height: 373px;
     /*overflow: hidden;*/
-    margin: 130px 0 0 0;
+    margin: 130px 0 0 20px;
     position: relative;
     padding: 12px 0 12px 36px;
 }
@@ -408,7 +408,7 @@ i:hover{
     width: 519px;
     height: 373px;
     /*overflow: hidden;*/
-    margin: 37px 0 0 0;
+    margin: 37px 0 0 20px;
     position: relative;
     padding: 12px 0 12px 36px;
 }
@@ -435,7 +435,7 @@ i:hover{
 .tail_img_box{
     display: flex;
     justify-content: space-between;
-    margin: 70px 0 0 0;
+    margin: 70px 20px 0 20px;
 
 }
 .tail_img_box img{

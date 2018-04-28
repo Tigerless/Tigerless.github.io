@@ -29,10 +29,13 @@ var h = document.documentElement.scrollHeight || document.body.scrollHeight;
 console.info(w,h);
 var b1_width = 1920;
 var b1_left = -372;
+var b1_top = 23;
 
 if(w <= 640){
     b1_width = 1040;
-    b1_left = -214;
+    b1_left = -199;
+    b1_top = 101;
+
 }
 
 
@@ -88,7 +91,7 @@ window.onscroll = function() {
 
                 $("#ball_nebula").animate({
                     left: b1_left + width_reduce / 2 + 'px',
-                    top: 23 + refer_reduce + 'px',
+                    top: b1_top + refer_reduce + 'px',
                     width: (b1_width - width_reduce) + 'px'
                 }, 5);
 
