@@ -106,6 +106,7 @@ window.onscroll = function() {
             $('#content1_img3').rotate(-angle);
             $('#content1_img5').rotate(angle);
         }
+
         //animate3
         //400--900,1353px
         if (scrollY < 900 && scrollY > 400) {
@@ -124,7 +125,7 @@ window.onscroll = function() {
             $(".codeframe").fadeTo(1000,0.15);
             codeframe_view = false
             $("#result").animate({
-                left: '6px',
+                left: '29px',
                 top: '77px',
                 width: '505px',
                 opacity:'1',
