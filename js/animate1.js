@@ -23,23 +23,53 @@ var width_reduce = 0;
 var height_reduce = 0;
 var refer_reduce = 0;//相对点减少度
 
-var w = document.documentElement.scrollWidth || document.body.scrollWidth;
-var h = document.documentElement.scrollHeight || document.body.scrollHeight;
+// console.info(w,h);
 
-console.info(w,h);
 var b1_width = 1920;
 var b1_left = -372;
 var b1_top = 23;
 
-if(w <= 640){
-    b1_width = 1040;
-    b1_left = -199;
-    b1_top = 101;
+window.onresize = function() {
+    var w = document.documentElement.scrollWidth || document.body.scrollWidth;
+
+    if(w <= 1000){
+        b1_width = 1040;
+        b1_left = -199;
+        b1_top = 101;
+
+    }
+    else{
+        b1_width = 1920;
+        b1_left = -372;
+        b1_top = 23;
+    }
+
+    $("#ball_nebula").animate({
+        left: b1_left + width_reduce / 2 + 'px',
+        top: b1_top + refer_reduce + 'px',
+        width: (b1_width - width_reduce) + 'px'
+    }, 5);
 
 }
 
 
+
 window.onscroll = function() {
+
+    var w = document.documentElement.scrollWidth || document.body.scrollWidth;
+    // var h = document.documentElement.scrollHeight || document.body.scrollHeight;
+
+    if(w <= 1000){
+        b1_width = 1040;
+        b1_left = -199;
+        b1_top = 101;
+
+    }
+    else{
+        b1_width = 1920;
+        b1_left = -372;
+        b1_top = 23;
+    }
 
     $(document).ready(function () {
 
@@ -52,7 +82,7 @@ window.onscroll = function() {
                 alpha1 = 1 - scrollY / 172;
                 alpha2 = 1 - (scrollY -172) / 222;
                 alpha3 = 1 - (scrollY - 354) / 132;
-                // alpha4 = 1 - scrollY / 650;
+                // alpha4 = 1 - scrollY / 640;
                 // alpha5 = 1 - scrollY / 700;
                 width_reduce = scrollY / 4 * 3;
                 height_reduce = width_reduce / 19*8;
@@ -120,12 +150,13 @@ window.onscroll = function() {
 
 
         }
+        //animate2
         //505*372
         if(scrollY > 900 && codeframe_view == true){
             $(".codeframe").fadeTo(1000,0.15);
             codeframe_view = false
             $("#result").animate({
-                left: '29px',
+                left: '20px',
                 top: '77px',
                 width: '505px',
                 opacity:'1',

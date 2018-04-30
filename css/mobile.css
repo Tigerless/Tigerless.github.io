@@ -5,8 +5,7 @@ header{
 body{
     background-color: #101216;
     min-width: 640px;
-    overflow-x: hidden;
-
+    /*overflow-x: hidden;*/
 }
 @font-face {
     font-family: 'source_sans_pro';
@@ -22,17 +21,15 @@ body{
     background-color: rgba(32,60,91,0.65);
     width: 100%;
     /*display: block;*/
-    min-width: 640px;
+    min-width: 600px;
     position: fixed;
     z-index: 10;
     box-shadow: 4px 4px 30px #1b2d43;
     /*overflow:auto;*/
-
 }
 .head_container{
-    width: 640px;
+    min-width: 545px;
     margin: 0 auto;
-
 }
 
 
@@ -133,7 +130,7 @@ i:hover{
 }
 
 .main_container{
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     /*width: 640px;*/
     display: flex;
     /*justify-content: space-between;*/
@@ -156,37 +153,37 @@ i:hover{
 
 .main_content1{
     background-color: rgba(24,48,65,0.15);
-    height: 1164px;
-
+    /*height: 964px;*/
 
 }
 .main_content2{
-    height: 890px;
+    /*height: 890px;*/
 }
 .main_content3{
     background-color: rgba(24,48,65,0.15);
-    height: 1145px;
+    /*height: 1145px;*/
 
 }
 .main_content4{
-    height: 876px;
+    /*height: 876px;*/
 }
 .content1_left{
     /*width: 567px;*/
-
 
 }
 .content1_left h4{
     color: #4d78a2;
     font-size: 28px;
     margin: 78px 20px 0 20px;
+    text-align: center;
 
 }
 .content1_left h5{
+    text-align: justify;
     color: #d8dfe6;
     font-size: 19px;
-    margin: 38px 20px 0 20px;
     line-height: 32px;
+    padding: 20px;
 }
 
 .content1_right{
@@ -195,6 +192,7 @@ i:hover{
     overflow: hidden;
     left: 10px;
     height: 500px;
+    margin: 0 auto;
 }
 
 .img_bg{
@@ -239,8 +237,8 @@ i:hover{
 
 }
 .content2_left{
-    width: 497px;
-    height: 450px;
+    /*width: 497px;*/
+    /*height: 450px;*/
 
 }
 .codeframe{
@@ -248,7 +246,7 @@ i:hover{
     width: 519px;
     height: 373px;
     /*overflow: hidden;*/
-    margin: 74px 0 0 20px;
+    margin: 74px auto;
     position: relative;
     padding: 12px 0 12px 36px;
 }
@@ -293,20 +291,22 @@ i:hover{
     color: #4d78a2;
     font-size: 28px;
     margin: 78px 20px 0 20px;
-
+    text-align: center;
 }
 .content2_left h5{
     color: #d8dfe6;
     font-size: 19px;
     margin: 38px 20px 0 20px;
     line-height: 32px;
+    text-align: justify;
 }
 
 
 
 .content2_right{
-    width: 567px;
+    /*width: 567px;*/
     position: relative;
+    margin: 0 auto;
 }
 
 /*.content2_right img{*/
@@ -318,17 +318,17 @@ i:hover{
 
 
 .content3_left{
-    width: 486px;
-    margin: 0 20px 0 0;
+    /*width: 486px;*/
+    margin: 0 auto;
 }
 .content3_codeframe{
-    background: url(../images/codeframe.jpg)  top no-repeat;
-    width: 519px;
+    background: url(../images/codeframe.jpg) no-repeat;
+    width: 505px;
     height: 373px;
-    /*overflow: hidden;*/
-    margin: 130px 0 0 20px;
+    /* overflow: hidden; */
+    margin: 37px auto;
     position: relative;
-    padding: 12px 0 12px 36px;
+    padding: 12px 0px 12px 28px;
 }
 /*.content3_left img{*/
 /*position: relative;*/
@@ -338,12 +338,12 @@ i:hover{
 
 /*}*/
 .content3_right{
-    width: 607px;
-    padding: 30px 20px 0 30px;
+    /*width: 607px;*/
+    /*padding: 30px 20px 0 30px;*/
     overflow: visible;
 }
 .content3_right hr{
-    width: 100%;
+    /* width: 100%; */
     margin: 51px 0 0 20px;
 }
 
@@ -354,10 +354,11 @@ i:hover{
     margin: 38px 20px 0 20px;
     line-height: 32px;
     font-style: italic;
-
+    text-align: justify;
 }
 
 .content3_right h4{
+    text-align: center;
     color: #4d78a2;
     font-size: 28px;
     margin: 32px 20px 0 20px;
@@ -369,26 +370,28 @@ i:hover{
     font-size: 19px;
     margin: 38px 20px 0 20px;
     line-height: 32px;
+    text-align: justify;
 }
 
 .content3_right h2{
     text-align: right;
     color: #d8dfe6;
     font-size: 19px;
-    margin: 10px 0 0 25px;
+    margin: 10px 20px 0 25px;
     font-style: italic;
 }
 
 .content4_left{
-    width: 486px;
-    margin: 0 20px 0 0;
+    /*width: 486px;*/
+    /* margin: 0 20px 0 0; */
 }
 
 
 .content4_left h4{
+    text-align: center;
     color: #4d78a2;
     font-size: 28px;
-    margin: 40px 20px 0 20px;
+    margin: 32px 20px 0 20px;
 
 }
 
@@ -397,20 +400,21 @@ i:hover{
     font-size: 19px;
     margin: 38px 20px 0 20px;
     line-height: 32px;
+    text-align: justify;
+}
+
+.content4_right{
+    margin: 0 auto;
 
 }
-.content4_right{
-    /*width: 486px;*/
-    /*margin: 0 20px 0 0;*/
-}
 .content4_codeframe{
-    background: url(../images/codeframe.jpg)  top no-repeat;
-    width: 519px;
+    background: url(../images/codeframe.jpg) no-repeat;
+    width: 505px;
     height: 373px;
-    /*overflow: hidden;*/
-    margin: 37px 0 0 20px;
+    /* overflow: hidden; */
+    margin: 37px 49px 0 20px;
     position: relative;
-    padding: 12px 0 12px 36px;
+    padding: 12px 0px 12px 28px;
 }
 .main_tail{
     background-color: rgba(24,48,65,0.15);

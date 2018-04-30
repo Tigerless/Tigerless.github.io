@@ -184,6 +184,8 @@ i:hover{
     font-size: 19px;
     margin: 38px 20px 0 20px;
     line-height: 32px;
+    text-align: justify;
+
 }
 
 .content1_right{
@@ -241,13 +243,13 @@ i:hover{
 
 }
 .codeframe{
-    background: url(../images/codeframe.jpg)  top no-repeat;
-    width: 519px;
+    background: url(../images/codeframe.jpg) no-repeat;
+    width: 505px;
     height: 373px;
-    /*overflow: hidden;*/
-    margin: 74px 0 0 0;
+    /* overflow: hidden; */
+    /* margin: 37px auto; */
     position: relative;
-    padding: 12px 0 12px 36px;
+    padding: 12px 0px 12px 28px;
 }
 .codeframe_container{
     /*margin: 11px 0 0 35px;*/
@@ -297,13 +299,16 @@ i:hover{
     font-size: 19px;
     margin: 38px 20px 0 20px;
     line-height: 32px;
+    text-align: justify;
+
 }
 
 
 
 .content2_right{
-    width: 567px;
+    /* width: 567px; */
     position: relative;
+    padding: 78px 20px;
 }
 
 /*.content2_right img{*/
@@ -315,17 +320,18 @@ i:hover{
 
 
 .content3_left{
-    width: 486px;
-    margin: 0 20px 0 0;
+    /* width: 566px; */
+    /* margin: 0 20px 0 0; */
+    padding: 120px 20px;
 }
 .content3_codeframe{
-    background: url(../images/codeframe.jpg)  top no-repeat;
-    width: 519px;
+    background: url(../images/codeframe.jpg) no-repeat;
+    width: 505px;
     height: 373px;
-    /*overflow: hidden;*/
-    margin: 130px 0 0 0;
+    /* overflow: hidden; */
+    margin: 37px auto;
     position: relative;
-    padding: 12px 0 12px 36px;
+    padding: 12px 0px 12px 28px;
 }
 /*.content3_left img{*/
     /*position: relative;*/
@@ -341,38 +347,41 @@ i:hover{
 }
 .content3_right hr{
     width: 100%;
-    margin: 51px 0 0 20px;
+    /* margin: 51px 0 0 20px; */
 }
 
 
 .content3_right h3{
     color: #d8dfe6;
     font-size: 19px;
-    margin: 38px 20px 0 20px;
+    /* margin: 38px 20px 0 20px; */
     line-height: 32px;
     font-style: italic;
-
+    text-align: justify;
+    padding: 20px 0;
 }
 
 .content3_right h4{
     color: #4d78a2;
     font-size: 28px;
-    margin: 32px 20px 0 20px;
-
+    /* margin: 32px 20px 0 20px; */
+    padding: 40px 0;
 }
 
 .content3_right h5{
     color: #d8dfe6;
     font-size: 19px;
-    margin: 38px 20px 0 20px;
+    /* margin: 38px 20px 0 20px; */
     line-height: 32px;
+    text-align: justify;
+    padding: 20px 0;
 }
 
 .content3_right h2{
     text-align: right;
     color: #d8dfe6;
     font-size: 19px;
-    margin: 10px 0 0 25px;
+    /* margin: 10px 0 0 25px; */
     font-style: italic;
 }
 
@@ -394,20 +403,22 @@ i:hover{
     font-size: 19px;
     margin: 38px 20px 0 20px;
     line-height: 32px;
+    text-align: justify;
 
 }
 .content4_right{
     /*width: 486px;*/
     /*margin: 0 20px 0 0;*/
+    padding: 20px;
 }
 .content4_codeframe{
-    background: url(../images/codeframe.jpg)  top no-repeat;
-    width: 519px;
+    background: url(../images/codeframe.jpg) no-repeat;
+    width: 505px;
     height: 373px;
-    /*overflow: hidden;*/
-    margin: 37px 0 0 0;
+    /* overflow: hidden; */
+    margin: 17px auto;
     position: relative;
-    padding: 12px 0 12px 36px;
+    padding: 12px 0px 12px 28px;
 }
 .main_tail{
     background-color: rgba(24,48,65,0.15);

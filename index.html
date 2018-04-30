@@ -2,21 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <title>
         SECBIT
     </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="css/base.css" type="text/css">
 
-    <link rel="stylesheet" media="screen and (min-width:650px)"  href="css/index.css" type="text/css">
+    <link rel="stylesheet" media="screen and (min-width:751px)"  href="css/index.css" type="text/css">
 
     <link rel="stylesheet" href="css/iconfont.css" type="text/css">
 
     <link  sizes="any"  rel="icon" href="secbit_m.ico" >
 
-    <link rel="stylesheet" type="text/css" media="screen and (max-width:650px)" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:750px)" href="css/mobile.css">
+    <script>
 
+        var viewport = document.querySelector("meta[name=viewport]");
+        var viewport_scale = 1/window.devicePixelRatio
+
+//        var x = 1/viewport_x;
+        console.log(viewport_scale)
+
+        viewport.setAttribute("content", "width=device-width, initial-scale=" + viewport_scale + ", maximum-scale=1.0, user-scalable=no")
+
+    </script>
 
 </head>
 <body>
@@ -91,6 +103,9 @@
                 <h5>
                     The security of smart contracts is of great importance to a healthy Ethereum ecosystem. However, it is not a trivial task to develop secure smart contacts using languages such as Solidity, due to their inherent issues and vulnerabilities. We present SECBIT, a framework that could fundamentally change smart contract security landscape. Backed by the full strength of formal specifications and mathematical proofs, SECBIT incorporates three levels of auditing services to address all aspects of security issues in smart contracts.
                 </h5>
+            </div>
+            <div >
+
             </div>
             <div class="content1_right">
                 <img src="images/animate1_04.png" alt="animate1_08.png">
