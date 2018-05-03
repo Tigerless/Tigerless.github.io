@@ -28,7 +28,7 @@ window.onscroll = function() {
 
         //animate1
         var scrollY = window.scrollY;
-        console.info(scrollY);
+        // console.info(scrollY);
         if (scrollY < 500) {
 
             // alpha = 1 - scrollY / 400;

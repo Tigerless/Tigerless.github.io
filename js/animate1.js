@@ -30,9 +30,32 @@ var b1_left = -372;
 var b1_top = 23;
 
 var correct1 = 0;
-var correct2 = 0;
-var correct3 = 0;
+var correct2 = 0;//animate2
+var correct3 = 0;//animate3
+var is_mobile = false;
 
+var diviceWidth = 0;
+
+var diviceHeight = 0;
+
+
+if(/Android|webOS|iPhone|BlackBerry/i.test(navigator.userAgent)) {
+    // console.log("移动端");
+    $("#b").after($("#a"));//第三层，左右两列位置不同
+    is_mobile = true;
+
+    diviceWidth = document.documentElement.clientWidth;
+
+    diviceHeight = document.documentElement.clientHeight;
+
+    console.log(diviceWidth,diviceHeight)
+
+} else {
+    // console.log("pc端");
+    is_mobile = false;
+}
+
+//更改浏览器窗口大小的动画
 window.onresize = function() {
     var w = document.documentElement.scrollWidth || document.body.scrollWidth;
 
@@ -40,7 +63,7 @@ window.onresize = function() {
         b1_width = 1040;
         b1_left = -199;
         b1_top = 101;
-        // correct1 =
+
     }
     else{
         b1_width = 1920;
@@ -57,7 +80,6 @@ window.onresize = function() {
 }
 
 
-
 window.onscroll = function() {
 
     var w = document.documentElement.scrollWidth || document.body.scrollWidth;
@@ -67,8 +89,8 @@ window.onscroll = function() {
         b1_width = 1040;
         b1_left = -199;
         b1_top = 101;
-        // correct1 =
     }
+
     else{
         b1_width = 1920;
         b1_left = -372;
@@ -132,134 +154,332 @@ window.onscroll = function() {
         }
 
         //animate2
-        angle = scrollY / 1100 * 360;
-        if (scrollY < 1100) {
+        //1600：出现到结束划过的距离
+        angle = scrollY / 1600 * 360;
+        if (scrollY < 1600) {
             $('.img_bg').rotate(angle);
             $('#content1_img1').rotate(-angle);
             $('#content1_img2').rotate(-angle);
             $('#content1_img3').rotate(-angle);
-            $('#content1_img5').rotate(angle);
+            $('#content1_img5').rotate(-angle);
         }
 
         //animate3
         //400--900,1353px
-        if (scrollY < 900 && scrollY > 400) {
-            animate2_top = (scrollY - 400) / 500 * 903
-            // console.log("ojbk:"+the_top)
-            // var code = $("#code");
-            $("#code").animate({
-                top: -animate2_top + "px",
-            }, 5);
+        if (is_mobile){
 
 
+            var animate3_item =  document.getElementById("content2_right").getBoundingClientRect()
 
-        }
-        //animate2
-        //505*372
-        if(scrollY > 900 && codeframe_view == true){
-            $(".codeframe").fadeTo(1000,0.15);
-            codeframe_view = false
-            $("#result").animate({
-                left: 20 + correct1 + 'px',
-                top: '77px',
-                width: '505px',
-                opacity:'1',
-            }, 1000);
-        }
-        if(scrollY < 900 && codeframe_view == false){
-            $(".codeframe").fadeTo(1000,1);
-            codeframe_view = true
-            $("#result").animate({
-                left: '263px',
-                top: '237px',
-                width: '0',
-                opacity:'0',
-            }, 1000);
-        }
-
-        //1117--1917
-        //animate3
-        if(scrollY > 1117 && scrollY < 1917){
-            if(scrollY < 1317){
-                animate3_top = (scrollY - 1117) / 200 * 231
-                $("#content3_code1").stop(true,true);
-                $("#content3_code2").stop(true,true);
-
-                $("#content3_code1").animate({
-                    top: -animate3_top + "px",
+            // console.log(animate3_item_x.y);
+            //1177~-423
+            if (animate3_item.y < 1177 && animate3_item.y > 377) {
+                animate2_top = (animate3_item.y - 377) / 800 * 903
+                // console.log("ojbk:"+-animate2_top)
+                // var code = $("#code");
+                $("#code").animate({
+                    top: -animate2_top + "px",
                 }, 5);
             }
-
-            if(scrollY > 1517 && content3_code1_view == true){
-                $("#content3_code1").stop(true,true);
-                $("#content3_code2").stop(true,true);
-
-                $("#content3_code1").fadeTo(500,0);
-                content3_code1_view = false
+            //animate3
+            //505*372
+            if(animate3_item.y < 377 && codeframe_view == true){
+                $(".codeframe").fadeTo(1000,0.15);
+                codeframe_view = false
+                $("#result").animate({
+                    left: 20 + correct1 + 'px',
+                    top: '77px',
+                    width: '505px',
+                    opacity:'1',
+                }, 1000);
             }
-            if(scrollY < 1517 && content3_code1_view == false){
-                $("#content3_code1").stop(true,true);
-                $("#content3_code2").stop(true,true);
-
-                $("#content3_code1").fadeTo(500,1);
-                content3_code1_view = true
+            if(animate3_item.y > 377 && codeframe_view == false){
+                $(".codeframe").fadeTo(1000,1);
+                codeframe_view = true
+                $("#result").animate({
+                    left: '263px',
+                    top: '237px',
+                    width: '0',
+                    opacity:'0',
+                }, 1000);
             }
 
-            if(scrollY > 1717 && content3_code2_view == true){
-                $("#content3_code1").stop(true,true);
-                $("#content3_code2").stop(true,true);
 
-                $("#content3_code2").fadeTo(500,0);
-                content3_code2_view = false
-            }
-            if(scrollY < 1717 && content3_code2_view == false){
-                $("#content3_code1").stop(true,true);
-                $("#content3_code2").stop(true,true);
 
-                $("#content3_code2").fadeTo(500,1);
-                content3_code2_view = true
-            }
-        }
+            var animate4_item =  document.getElementById("a").getBoundingClientRect()
+            // console.log(animate4_item.y)
 
-        //1717--2384
-        //animate4
-        if(scrollY > 1612 && scrollY < 2412){
-            if(scrollY > 1612 && scrollY < 1887){
-                // console.log("ojbk")
-                if (content4_code1_view == true && content4_code2_view == true){
-                    $("#content4_code2").fadeTo(1,0);
-                    $("#content4_code1").fadeTo(1,0);
+            //1117--1917
+            //animate3
+            if(animate4_item.y < (diviceHeight - 200) && animate4_item.y > 0){
+                if(animate4_item.y > (diviceHeight - 200)/2){
+
+
+                    animate3_top = (animate4_item.y - (diviceHeight - 200)/2) / (diviceHeight - 200)/2 * 231
+
+                    // console.log(animate3_top);
+                    // console.log("aa",(animate4_item.y - (diviceHeight - 200)/2));
+                    // console.log("bb",(diviceHeight - 200)/2);
+
+                    $("#content3_code1").stop(true,true);
+                    $("#content3_code2").stop(true,true);
+
+                    $("#content3_code1").animate({
+                        top: -animate3_top + "px",
+                    }, 50);
+
+                }
+
+                if(animate4_item.y < (diviceHeight - 200)/2 && content3_code1_view == true){
+                    $("#content3_code1").stop(true,true);
+                    $("#content3_code2").stop(true,true);
+
+                    $("#content3_code1").fadeTo(500,0);
+                    content3_code1_view = false
+                }
+                if(animate4_item.y > (diviceHeight - 200)/2 && content3_code1_view == false){
+                    $("#content3_code1").stop(true,true);
+                    $("#content3_code2").stop(true,true);
+
+                    $("#content3_code1").fadeTo(500,1);
+                    content3_code1_view = true
+                }
+
+                if(animate4_item.y < (diviceHeight - 200)/4 && content3_code2_view == true){
+                    $("#content3_code1").stop(true,true);
+                    $("#content3_code2").stop(true,true);
+
+                    $("#content3_code2").fadeTo(500,0);
+                    content3_code2_view = false
+                }
+                if(animate4_item.y > (diviceHeight - 200)/4 && content3_code2_view == false){
+                    $("#content3_code1").stop(true,true);
+                    $("#content3_code2").stop(true,true);
+
+                    $("#content3_code2").fadeTo(500,1);
+                    content3_code2_view = true
                 }
             }
 
-            if(scrollY > 1887 && content4_code3_view == true){
-                $("#content4_code3").fadeTo(500,0);
-                $("#content4_code2").fadeTo(500,1);
-                content4_code3_view = false
-            }
-            if(scrollY < 1887 && content4_code3_view == false){
-                $("#content4_code3").fadeTo(500,1);
-                content4_code3_view = true
+            var animate5_item =  document.getElementById("content4_animate").getBoundingClientRect()
+
+            // if(animate5_item.y < (diviceHeight - 200) && animate5_item.y > 0){
+            //     if(animate5_item.y < (diviceHeight - 200)/4*3 && animate5_item.y > (diviceHeight - 200)/2){
+            //         // console.log("ojbk")
+            //         if (content4_code1_view == true && content4_code2_view == true) {
+            //
+            //             $("#content4_code2").fadeTo(5,1);
+            //             $("#content4_code3").fadeTo(5,0);
+            //             content4_code3_view = false
+            //
+            //         }
+            //
+            //
+            //         // if (content4_code1_view == true && content4_code2_view == true){
+            //         //     $("#content4_code2").fadeTo(1,0);
+            //         //     $("#content4_code1").fadeTo(1,0);
+            //         // }
+            //
+            //     }
+            //     if(animate5_item.y < (diviceHeight - 200)/2 && animate5_item.y > (diviceHeight - 200)/4){
+            //
+            //         $("#content4_code2").fadeTo(5,0);
+            //         // $("#content4_code1").fadeTo(1,1);
+            //
+            //         content4_code2_view = false
+            //
+            //     }
+            //
+            //     if(animate5_item.y > 1887 && content4_code3_view == true){
+            //         $("#content4_code3").fadeTo(500,0);
+            //         $("#content4_code2").fadeTo(500,1);
+            //         content4_code3_view = false
+            //     }
+            //     if(animate5_item.y < 1887 && content4_code3_view == false){
+            //         $("#content4_code3").fadeTo(500,1);
+            //         content4_code3_view = true
+            //     }
+            //
+            //     if(animate5_item.y > 2062 && content4_code2_view == true){
+            //         $("#content4_code2").fadeTo(500,0);
+            //         $("#content4_code1").fadeTo(1,1);
+            //
+            //         content4_code2_view = false
+            //     }
+            //
+            //     if(animate5_item.y < 2062 && content4_code2_view == false){
+            //         $("#content4_code2").fadeTo(500,1);
+            //         $("#content4_code1").fadeTo(1,0);
+            //         content4_code2_view = true
+            //     }
+            //
+            //     if(animate5_item.y > 0 && animate5_item.y < (diviceHeight - 200)/2){
+            //         animate4_top = animate5_item.y / (diviceHeight - 200)/2 * 528//878-350
+            //         $("#content4_code1").animate({
+            //             top: -animate4_top + "px",
+            //
+            //         }, 5);
+            //     }
+            // }
+            if(animate5_item.y < (diviceHeight - 200) && animate5_item.y > 0){
+                if(animate5_item.y < (diviceHeight - 200) && animate5_item.y > (diviceHeight - 200)/4*3){
+                    // console.log("ojbk")
+                    if (content4_code1_view == true && content4_code2_view == true){
+                        $("#content4_code2").fadeTo(1,0);
+                        $("#content4_code1").fadeTo(1,0);
+                    }
+                }
+
+                if(animate5_item.y < (diviceHeight - 200)/4*3 && content4_code3_view == true){
+                    $("#content4_code3").fadeTo(500,0);
+                    $("#content4_code2").fadeTo(500,1);
+                    content4_code3_view = false
+                }
+                if(animate5_item.y > (diviceHeight - 200)/4*3 && content4_code3_view == false){
+                    $("#content4_code3").fadeTo(500,1);
+                    content4_code3_view = true
+                }
+
+                if(animate5_item.y < (diviceHeight - 200)/2 && content4_code2_view == true){
+                    $("#content4_code2").fadeTo(500,0);
+                    $("#content4_code1").fadeTo(1,1);
+
+                    content4_code2_view = false
+                }
+                if(animate5_item.y > (diviceHeight - 200)/2 && content4_code2_view == false){
+                    $("#content4_code2").fadeTo(500,1);
+                    $("#content4_code1").fadeTo(1,0);
+                    content4_code2_view = true
+                }
+
+
+                
+
+                //
+                // if(scrollY > 2062 && scrollY < 2237){
+                //     animate4_top = (scrollY - 2062) / 175 * 528//878-350
+                //     $("#content4_code1").animate({
+                //         top: -animate4_top + "px",
+                //     }, 5);
+                // }
             }
 
-            if(scrollY > 2062 && content4_code2_view == true){
-                $("#content4_code2").fadeTo(500,0);
-                $("#content4_code1").fadeTo(1,1);
+        }
+        else{
 
-                content4_code2_view = false
-            }
-            if(scrollY < 2062 && content4_code2_view == false){
-                $("#content4_code2").fadeTo(500,1);
-                $("#content4_code1").fadeTo(1,0);
-                content4_code2_view = true
-            }
-
-            if(scrollY > 2062 && scrollY < 2237){
-                animate4_top = (scrollY - 2062) / 175 * 528//878-350
-                $("#content4_code1").animate({
-                    top: -animate4_top + "px",
+            if (scrollY < 900 && scrollY > 400) {
+                animate2_top = (scrollY - 400) / 500 * 903
+                // console.log("ojbk:"+the_top)
+                // var code = $("#code");
+                $("#code").animate({
+                    top: -animate2_top + "px",
                 }, 5);
             }
+            //animate3
+            //505*372
+            if(scrollY > 900 && codeframe_view == true){
+                $(".codeframe").fadeTo(1000,0.15);
+                codeframe_view = false
+                $("#result").animate({
+                    left: 20 + correct1 + 'px',
+                    top: '77px',
+                    width: '505px',
+                    opacity:'1',
+                }, 1000);
+            }
+
+            if(scrollY < 900 && codeframe_view == false){
+                $(".codeframe").fadeTo(1000,1);
+                codeframe_view = true
+                $("#result").animate({
+                    left: '263px',
+                    top: '237px',
+                    width: '0',
+                    opacity:'0',
+                }, 1000);
+            }
+
+            if(scrollY > 1117 && scrollY < 1917){
+                if(scrollY < 1317){
+                    animate3_top = (scrollY - 1117) / 200 * 231
+                    $("#content3_code1").stop(true,true);
+                    $("#content3_code2").stop(true,true);
+
+                    $("#content3_code1").animate({
+                        top: -animate3_top + "px",
+                    }, 5);
+                }
+
+                if(scrollY > 1517 && content3_code1_view == true){
+                    $("#content3_code1").stop(true,true);
+                    $("#content3_code2").stop(true,true);
+
+                    $("#content3_code1").fadeTo(500,0);
+                    content3_code1_view = false
+                }
+                if(scrollY < 1517 && content3_code1_view == false){
+                    $("#content3_code1").stop(true,true);
+                    $("#content3_code2").stop(true,true);
+
+                    $("#content3_code1").fadeTo(500,1);
+                    content3_code1_view = true
+                }
+
+                if(scrollY > 1717 && content3_code2_view == true){
+                    $("#content3_code1").stop(true,true);
+                    $("#content3_code2").stop(true,true);
+
+                    $("#content3_code2").fadeTo(500,0);
+                    content3_code2_view = false
+                }
+                if(scrollY < 1717 && content3_code2_view == false){
+                    $("#content3_code1").stop(true,true);
+                    $("#content3_code2").stop(true,true);
+
+                    $("#content3_code2").fadeTo(500,1);
+                    content3_code2_view = true
+                }
+            }
+
+            if(scrollY > 1612 && scrollY < 2412){
+                if(scrollY > 1612 && scrollY < 1887){
+                    // console.log("ojbk")
+                    if (content4_code1_view == true && content4_code2_view == true){
+                        $("#content4_code2").fadeTo(1,0);
+                        $("#content4_code1").fadeTo(1,0);
+                    }
+                }
+
+                if(scrollY > 1887 && content4_code3_view == true){
+                    $("#content4_code3").fadeTo(500,0);
+                    $("#content4_code2").fadeTo(500,1);
+                    content4_code3_view = false
+                }
+                if(scrollY < 1887 && content4_code3_view == false){
+                    $("#content4_code3").fadeTo(500,1);
+                    content4_code3_view = true
+                }
+
+                if(scrollY > 2062 && content4_code2_view == true){
+                    $("#content4_code2").fadeTo(500,0);
+                    $("#content4_code1").fadeTo(1,1);
+
+                    content4_code2_view = false
+                }
+                if(scrollY < 2062 && content4_code2_view == false){
+                    $("#content4_code2").fadeTo(500,1);
+                    $("#content4_code1").fadeTo(1,0);
+                    content4_code2_view = true
+                }
+
+                if(scrollY > 2062 && scrollY < 2237){
+                    animate4_top = (scrollY - 2062) / 175 * 528//878-350
+                    $("#content4_code1").animate({
+                        top: -animate4_top + "px",
+                    }, 5);
+                }
+            }
+
         }
     });
 }
