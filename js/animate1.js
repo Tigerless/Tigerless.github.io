@@ -16,22 +16,17 @@ var content4_code3_view = true;
 var alpha1 = 1;
 var alpha2 = 1;
 var alpha3 = 1;
-// var alpha4 = 1;
-// var alpha5 = 1;
 
 var width_reduce = 0;
 var height_reduce = 0;
 var refer_reduce = 0;//相对点减少度
 
-// console.info(w,h);
 
 var b1_width = 1920;
 var b1_left = -372;
 var b1_top = 23;
 
 var correct1 = 0;
-var correct2 = 0;//animate2
-var correct3 = 0;//animate3
 var is_mobile = false;
 
 var diviceWidth = 0;
@@ -48,7 +43,7 @@ if(/Android|webOS|iPhone|BlackBerry/i.test(navigator.userAgent)) {
 
     diviceHeight = document.documentElement.clientHeight;
 
-    console.log(diviceWidth,diviceHeight)
+    // console.log(diviceWidth,diviceHeight)
 
 } else {
     // console.log("pc端");
@@ -89,6 +84,7 @@ window.onscroll = function() {
         b1_width = 1040;
         b1_left = -199;
         b1_top = 101;
+
     }
 
     else{
@@ -263,64 +259,6 @@ window.onscroll = function() {
 
             var animate5_item =  document.getElementById("content4_animate").getBoundingClientRect()
 
-            // if(animate5_item.y < (diviceHeight - 200) && animate5_item.y > 0){
-            //     if(animate5_item.y < (diviceHeight - 200)/4*3 && animate5_item.y > (diviceHeight - 200)/2){
-            //         // console.log("ojbk")
-            //         if (content4_code1_view == true && content4_code2_view == true) {
-            //
-            //             $("#content4_code2").fadeTo(5,1);
-            //             $("#content4_code3").fadeTo(5,0);
-            //             content4_code3_view = false
-            //
-            //         }
-            //
-            //
-            //         // if (content4_code1_view == true && content4_code2_view == true){
-            //         //     $("#content4_code2").fadeTo(1,0);
-            //         //     $("#content4_code1").fadeTo(1,0);
-            //         // }
-            //
-            //     }
-            //     if(animate5_item.y < (diviceHeight - 200)/2 && animate5_item.y > (diviceHeight - 200)/4){
-            //
-            //         $("#content4_code2").fadeTo(5,0);
-            //         // $("#content4_code1").fadeTo(1,1);
-            //
-            //         content4_code2_view = false
-            //
-            //     }
-            //
-            //     if(animate5_item.y > 1887 && content4_code3_view == true){
-            //         $("#content4_code3").fadeTo(500,0);
-            //         $("#content4_code2").fadeTo(500,1);
-            //         content4_code3_view = false
-            //     }
-            //     if(animate5_item.y < 1887 && content4_code3_view == false){
-            //         $("#content4_code3").fadeTo(500,1);
-            //         content4_code3_view = true
-            //     }
-            //
-            //     if(animate5_item.y > 2062 && content4_code2_view == true){
-            //         $("#content4_code2").fadeTo(500,0);
-            //         $("#content4_code1").fadeTo(1,1);
-            //
-            //         content4_code2_view = false
-            //     }
-            //
-            //     if(animate5_item.y < 2062 && content4_code2_view == false){
-            //         $("#content4_code2").fadeTo(500,1);
-            //         $("#content4_code1").fadeTo(1,0);
-            //         content4_code2_view = true
-            //     }
-            //
-            //     if(animate5_item.y > 0 && animate5_item.y < (diviceHeight - 200)/2){
-            //         animate4_top = animate5_item.y / (diviceHeight - 200)/2 * 528//878-350
-            //         $("#content4_code1").animate({
-            //             top: -animate4_top + "px",
-            //
-            //         }, 5);
-            //     }
-            // }
             if(animate5_item.y < (diviceHeight - 200) && animate5_item.y > 0){
                 if(animate5_item.y < (diviceHeight - 200) && animate5_item.y > (diviceHeight - 200)/4*3){
                     // console.log("ojbk")
@@ -351,19 +289,7 @@ window.onscroll = function() {
                     $("#content4_code1").fadeTo(1,0);
                     content4_code2_view = true
                 }
-
-
-                
-
-                //
-                // if(scrollY > 2062 && scrollY < 2237){
-                //     animate4_top = (scrollY - 2062) / 175 * 528//878-350
-                //     $("#content4_code1").animate({
-                //         top: -animate4_top + "px",
-                //     }, 5);
-                // }
             }
-
         }
         else{
 
