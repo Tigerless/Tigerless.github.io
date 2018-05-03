@@ -11,19 +11,22 @@
 
     <link rel="stylesheet" href="css/base.css" type="text/css">
 
-    <link rel="stylesheet" media="screen and (min-width:751px)"  href="css/index.css" type="text/css">
+    <link rel="stylesheet" media="screen and (min-width:830px)"  href="css/index.css" type="text/css">
 
     <link rel="stylesheet" href="css/iconfont.css" type="text/css">
 
     <link  sizes="any"  rel="icon" href="secbit_m.ico" >
 
-    <link rel="stylesheet" type="text/css" media="screen and (max-width:750px)" href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:829px)" href="css/mobile.css">
     <script>
 
         var viewport = document.querySelector("meta[name=viewport]");
         var viewport_scale = 1/window.devicePixelRatio
 
 //        var x = 1/viewport_x;
+        if(viewport_scale < 0.5){
+            viewport_scale = 0.5;
+        }
         console.log(viewport_scale)
 
         viewport.setAttribute("content", "width=device-width, initial-scale=" + viewport_scale + ", maximum-scale=1.0, user-scalable=no")
@@ -131,7 +134,7 @@
             <div class="content2_right">
                 <div class="codeframe">
                     <div class="codeframe_container">
-                        <img id="code" src="images/sol.jpg" alt="animate1_09.png">
+                        <img id="code" src="images/sol.png" alt="animate1_09.png">
                     </div>
                 </div>
                 <img id="result" src="images/design_report.png" alt="animate1_09.png">
@@ -145,8 +148,8 @@
                 <div class="content3_codeframe">
                     <div class="codeframe_container">
                         <img id="content3_code3" src="images/reentrancy_spec.png" alt="animate1_09.png">
-                        <img id="content3_code2" src="images/reentrancy_sol.jpg" alt="animate1_09.png">
-                        <img id="content3_code1" src="images/spec.jpg" alt="animate1_09.png">
+                        <img id="content3_code2" src="images/reentrancy_sol.png" alt="animate1_09.png">
+                        <img id="content3_code1" src="images/spec.png" alt="animate1_09.png">
                     </div>
                 </div>
 
@@ -182,9 +185,9 @@
                 <div class="content4_codeframe">
                     <div class="codeframe_container">
 
-                        <img id="content4_code1" src="images/coq.jpg" alt="animate1_09.png">
-                        <img id="content4_code2" src="images/vault_spec.jpg" alt="animate1_09.png">
-                        <img id="content4_code3" src="images/vault_sol.jpg" alt="animate1_09.png">
+                        <img id="content4_code1" src="images/coq.png" alt="animate1_09">
+                        <img id="content4_code2" src="images/vault_spec.png" alt="animate1_09">
+                        <img id="content4_code3" src="images/vault_sol.png" alt="animate1_09">
 
                     </div>
                 </div>
@@ -220,7 +223,6 @@
 
 <script type="text/javascript" src="js/animate1.js"></script>
 
-<!--<script type="text/javascript" media="screen and (max-width:650px)"  src="js/animate2.js"></script>-->
 
 </body>
 </html>

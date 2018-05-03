@@ -11,6 +11,8 @@ body{
     font-family: 'source_sans_pro';
     src: url('fonts/EOT/SourceSansPro-Regular.eot');
     src: url('fonts/OTF/SourceSansPro-Regular.otf');
+    src: url('fonts/WOFF/OTF/SourceSansPro-Regular.otf.woff');
+    src: url('fonts/WOFF/TTF/SourceSansPro-Regular.ttf.woff');
     src: url('fonts/TTF/SourceSansPro-Regular.ttf') format('truetype');
     /*src: url('fonts/SVG/SourceSansPro-Regular.svg#NeuesBauenDemo') format('svg');*/
 

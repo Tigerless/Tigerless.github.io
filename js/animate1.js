@@ -29,6 +29,10 @@ var b1_width = 1920;
 var b1_left = -372;
 var b1_top = 23;
 
+var correct1 = 0;
+var correct2 = 0;
+var correct3 = 0;
+
 window.onresize = function() {
     var w = document.documentElement.scrollWidth || document.body.scrollWidth;
 
@@ -36,7 +40,7 @@ window.onresize = function() {
         b1_width = 1040;
         b1_left = -199;
         b1_top = 101;
-
+        // correct1 =
     }
     else{
         b1_width = 1920;
@@ -63,7 +67,7 @@ window.onscroll = function() {
         b1_width = 1040;
         b1_left = -199;
         b1_top = 101;
-
+        // correct1 =
     }
     else{
         b1_width = 1920;
@@ -156,7 +160,7 @@ window.onscroll = function() {
             $(".codeframe").fadeTo(1000,0.15);
             codeframe_view = false
             $("#result").animate({
-                left: '20px',
+                left: 20 + correct1 + 'px',
                 top: '77px',
                 width: '505px',
                 opacity:'1',
