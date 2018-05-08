@@ -33,6 +33,9 @@ var diviceWidth = 0;
 
 var diviceHeight = 0;
 
+var ball_nebula = document.getElementById("ball_nebula");
+// console.log(ball_nebula)
+
 
 if(/Android|webOS|iPhone|BlackBerry/i.test(navigator.userAgent)) {
     // console.log("移动端");
@@ -97,6 +100,9 @@ window.onscroll = function() {
 
         //animate1
         var scrollY = window.scrollY;
+        // var ball_nebula = document.getElementsByClassName("bg2_container");
+
+
         // console.info(scrollY);
         if (scrollY < 500) {
 
@@ -141,12 +147,15 @@ window.onscroll = function() {
                 $("#main_head5").fadeTo(5, alpha3);
 
 
-                $("#ball_nebula").animate({
-                    left: b1_left + width_reduce / 2 + 'px',
-                    top: b1_top + refer_reduce + 'px',
-                    width: (b1_width - width_reduce) + 'px'
-                }, 5);
+                ball_nebula.style.left = b1_left + width_reduce / 2 + 'px';
+                ball_nebula.style.top = b1_top + refer_reduce + 'px';
+                ball_nebula.style.width = (b1_width - width_reduce) + 'px';
 
+                // $("#ball_nebula").animate({
+                //     left: b1_left + width_reduce / 2 + 'px',
+                //     top: b1_top + refer_reduce + 'px',
+                //     width: (b1_width - width_reduce) + 'px'
+                // }, 5);
         }
 
         //animate2
@@ -171,12 +180,13 @@ window.onscroll = function() {
             //1177~-423
             if (animate3_item.y < 1177 && animate3_item.y > 377) {
                 animate2_top = (animate3_item.y - 377) / 800 * 903
-                // console.log("ojbk:"+-animate2_top)
-                // var code = $("#code");
+
                 $("#code").animate({
                     top: -animate2_top + "px",
                 }, 5);
+
             }
+
             //animate3
             //505*372
             if(animate3_item.y < 377 && codeframe_view == true){
@@ -273,6 +283,7 @@ window.onscroll = function() {
                     $("#content4_code2").fadeTo(500,1);
                     content4_code3_view = false
                 }
+
                 if(animate5_item.y > (diviceHeight - 200)/4*3 && content4_code3_view == false){
                     $("#content4_code3").fadeTo(500,1);
                     content4_code3_view = true
@@ -289,6 +300,7 @@ window.onscroll = function() {
                     $("#content4_code1").fadeTo(1,0);
                     content4_code2_view = true
                 }
+
             }
         }
         else{
@@ -301,6 +313,7 @@ window.onscroll = function() {
                     top: -animate2_top + "px",
                 }, 5);
             }
+
             //animate3
             //505*372
             if(scrollY > 900 && codeframe_view == true){
@@ -408,4 +421,5 @@ window.onscroll = function() {
 
         }
     });
+
 }
