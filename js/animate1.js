@@ -34,7 +34,26 @@ var diviceWidth = 0;
 var diviceHeight = 0;
 
 var ball_nebula = document.getElementById("ball_nebula");
-// console.log(ball_nebula)
+var stair1 = document.getElementById("main_head1");
+var stair2 = document.getElementById("main_head2");
+var stair3 = document.getElementById("main_head3");
+var stair4 = document.getElementById("main_head4");
+var stair5 = document.getElementById("main_head5");
+
+var animate2_bg = document.getElementById("img_bg");
+var animate2_item1 = document.getElementById("content1_img1");
+var animate2_item2 = document.getElementById("content1_img2");
+var animate2_item3 = document.getElementById("content1_img3");
+var animate2_item5 = document.getElementById("content1_img5");
+
+// animate2_bg.style.transform = "rotate(" + (-150) + "deg)";
+
+// console.log("animate2_item5"+animate2_bg)
+// console.log("animate2_item5"+animate2_item1)
+// console.log("animate2_item5"+animate2_item2)
+// console.log("animate2_item5"+animate2_item3)
+// console.log("animate2_item5"+animate2_item5)
+
 
 
 if(/Android|webOS|iPhone|BlackBerry/i.test(navigator.userAgent)) {
@@ -51,6 +70,7 @@ if(/Android|webOS|iPhone|BlackBerry/i.test(navigator.userAgent)) {
 } else {
     // console.log("pc端");
     is_mobile = false;
+
 }
 
 //更改浏览器窗口大小的动画
@@ -139,13 +159,18 @@ window.onscroll = function() {
                 // if (alpha5 < 0) {
                 //     alpha5 = 0
                 // }
-                $("#main_head1").fadeTo(5, alpha1);
-                $("#main_head2").fadeTo(5, alpha1);
 
-                $("#main_head3").fadeTo(5, alpha2);
-                $("#main_head4").fadeTo(5, alpha3);
-                $("#main_head5").fadeTo(5, alpha3);
-
+                // $("#main_head1").fadeTo(5, alpha1);
+                // $("#main_head2").fadeTo(5, alpha1);
+                //
+                // $("#main_head3").fadeTo(5, alpha2);
+                // $("#main_head4").fadeTo(5, alpha3);
+                // $("#main_head5").fadeTo(5, alpha3);
+                stair1.style.opacity = alpha1;
+                stair2.style.opacity = alpha1;
+                stair3.style.opacity = alpha2;
+                stair4.style.opacity = alpha3;
+                stair5.style.opacity = alpha3;
 
                 ball_nebula.style.left = b1_left + width_reduce / 2 + 'px';
                 ball_nebula.style.top = b1_top + refer_reduce + 'px';
@@ -156,17 +181,26 @@ window.onscroll = function() {
                 //     top: b1_top + refer_reduce + 'px',
                 //     width: (b1_width - width_reduce) + 'px'
                 // }, 5);
+
         }
 
         //animate2
         //1600：出现到结束划过的距离
         angle = scrollY / 1600 * 360;
         if (scrollY < 1600) {
-            $('.img_bg').rotate(angle);
-            $('#content1_img1').rotate(-angle);
-            $('#content1_img2').rotate(-angle);
-            $('#content1_img3').rotate(-angle);
-            $('#content1_img5').rotate(-angle);
+            // $('.img_bg').rotate(angle);
+            // $('#content1_img1').rotate(-angle);
+            // $('#content1_img2').rotate(-angle);
+            // $('#content1_img3').rotate(-angle);
+            // $('#content1_img5').rotate(-angle);
+
+
+            animate2_bg.style.transform = "rotate("+angle+"deg)";
+            animate2_item1.style.transform = "rotate("+(-angle)+"deg)";
+            animate2_item2.style.transform = "rotate("+(-angle)+"deg)";
+            animate2_item3.style.transform = "rotate("+(-angle)+"deg)";
+            animate2_item5.style.transform = "rotate("+(-angle)+"deg)";
+
         }
 
         //animate3
@@ -176,7 +210,7 @@ window.onscroll = function() {
 
             var animate3_item =  document.getElementById("content2_right").getBoundingClientRect()
 
-            // console.log(animate3_item_x.y);
+            // console.log("animate3_item"+animate3_item.y);
             //1177~-423
             if (animate3_item.y < 1177 && animate3_item.y > 377) {
                 animate2_top = (animate3_item.y - 377) / 800 * 903
