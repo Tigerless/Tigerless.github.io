@@ -46,6 +46,7 @@ var animate2_item2 = document.getElementById("content1_img2");
 var animate2_item3 = document.getElementById("content1_img3");
 var animate2_item5 = document.getElementById("content1_img5");
 
+
 // animate2_bg.style.transform = "rotate(" + (-150) + "deg)";
 
 // console.log("animate2_item5"+animate2_bg)
@@ -209,15 +210,17 @@ window.onscroll = function() {
 
 
             var animate3_item =  document.getElementById("content2_right").getBoundingClientRect()
+            var code = document.getElementById("code");
 
             // console.log("animate3_item"+animate3_item.y);
             //1177~-423
             if (animate3_item.y < 1177 && animate3_item.y > 377) {
                 animate2_top = (animate3_item.y - 377) / 800 * 903
 
-                $("#code").animate({
-                    top: -animate2_top + "px",
-                }, 5);
+                code.style.top = -animate2_top + "px";
+                // $("#code").animate({
+                //     top: -animate2_top + "px",
+                // }, 5);
 
             }
 
