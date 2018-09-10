@@ -1,228 +1,356 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>
-        SECBIT
-    </title>
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="./iconfont.css">
 
-    <link rel="stylesheet" href="css/base.css" type="text/css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
 
-    <link rel="stylesheet" media="screen and (min-width:829px)"  href="css/index.css" type="text/css">
+        <!-- Add your site or application content here -->
+        <!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
+        <div class="main_box">
+            <div class="main_header clearparentDiv">
+                <div class="stair1 clearfix">
+                    <div class="stair1_left">
+                        <img src="img/icon.jpg" alt="">
+                    </div>
+                    <div class="stair1_right">
+                        <nav>
+                            <li>
+                                Home
+                            </li>
+                            <li>
+                                Programs
+                            </li>
+                            <li>
+                                Publications
+                            </li>
+                            <li>
+                                Events
+                            </li>
+                            <li>
+                                About
+                            </li>
+                        </nav>
+                    </div>
 
-    <link rel="stylesheet" href="css/iconfont.css" type="text/css">
-
-    <link  sizes="any"  rel="icon" href="secbit_m.ico" >
-
-    <link rel="stylesheet" type="text/css" media="screen and (max-width:828px)" href="css/mobile.css">
-    <script>
-
-        var viewport = document.querySelector("meta[name=viewport]");
-        var viewport_scale = 1/window.devicePixelRatio
-
-//        var x = 1/viewport_x;
-        if(viewport_scale < 0.5){
-            viewport_scale = 0.5;
-        }
-//        console.log(viewport_scale)
-
-        viewport.setAttribute("content", "width=device-width, initial-scale=" + viewport_scale + ", maximum-scale=1.0, user-scalable=no")
-
-    </script>
-
-</head>
-<body>
-<header>
-    <div class="head">
-        <div class="head_container">
-            <div class="head_container_left">
-                <a href="#">
-                    <img src="images/logo.png" alt="logo_s">
-                </a>
-            </div>
-            <div class="head_container_right">
-                <a class="nav_link" href="#">
-                    Service
-                </a>
-                <a class="nav_link"  href="#">
-                    Partners
-                </a>
-                <div class="icons">
-                    <a class="icon" href="twitter.com">
-                        <i class="icon iconfont icon-twitter"></i>
-                    </a>
-                    <a class="icon" href="facebook.com">
-                        <i class="icon iconfont icon-facebook"></i>
-                    </a>
-                    <a class="icon" href="#">
-                        <i class="icon iconfont icon-email"></i>
-                    </a>
-                    <a class="icon" href="medium.com">
-                        <i class="icon iconfont icon-medium"></i>
-                    </a>
-
+                </div>
+                <div class="stair2">
+                    Interaction Media Studio
                 </div>
             </div>
         </div>
-    </div>
-
-</header>
-<div class="main_head">
-
-    <div class="bg2_container">
-        <img id="ball_nebula" src="images/ball_nebula2.png" alt="ball_nebula">
-    </div>
-
-    <div class="main_head_container">
-        <div id="main_head" class="head_content">
-            <h4  id="main_head1">
-                Axiom Principle_of_Explosion : forall P Q:Prop, P ^ ~ P -> Q.
-            </h4>
-            <h4  id="main_head2">
-                From Contradiction, Anything Follows.
-            </h4>
-            <img  id="main_head3" src="images/logo_b.png" alt="secbit">
-            <h5  id="main_head4">
-                FORMALIZING A SECURE BIT WORLD
-            </h5>
-            <h5  id="main_head5">
-                STARTING FROM FORMALIZING SMART CONTRACTS
-            </h5>
-        </div>
-    </div>
-</div>
-<div class="bg_content">
-    <div class="main_content1">
-        <div class="main_container">
-            <div class="content1_left">
-                <h4>
-                    <b>
-                        PLATFORM FOR SMART CONTRACT SECURITY
-                    </b>
-                </h4>
-                <h5>
-                    The security of smart contracts is of great importance to a healthy Ethereum ecosystem. However, it is not a trivial task to develop secure smart contacts using languages such as Solidity, due to their inherent issues and vulnerabilities. We present SECBIT, a framework that could fundamentally change smart contract security landscape. Backed by the full strength of formal specifications and mathematical proofs, SECBIT incorporates three levels of auditing services to address all aspects of security issues in smart contracts.
-                </h5>
-            </div>
-            <div id="animate2" class="content1_right">
-
-                <img src="images/animate1_04.png" alt="animate1_08.png">
-                <img id="content1_img5" src="images/animate1_05.png" alt="animate1_09.png">
-                <div id="img_bg" class="img_bg">
-                    <img id="content1_img1" src="images/animate1_01.png" alt="animate1_05.png">
-                    <img id="content1_img2" src="images/animate1_02.png" alt="animate1_06.png">
-                    <img id="content1_img3" src="images/animate1_03.png" alt="animate1_07.png">
+        <div class="main_body">
+            <div class="body1">
+                <div class="body1_stair1 title">
+                    <p>
+                        Meet our team
+                    </p>
                 </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="main_content2">
-        <div class="main_container">
-            <div class="content2_left">
-                <h4>
-                    SEMI-AUTOMATED VERIFICATION
-                </h4>
-                <h5>
-                    The first level of SECBIT is a semi-automatic verification service that identifies common issues and vulnerabilities in smart contracts. This is done using state-of-the-art automatic formal analysis tools, in combination with manual triaging based on our expert understanding of the intention and implementation of the contract-under-auditing. The findings are provided in a detailed source-code-level security auditing report with remediation advises.
-                </h5>
-            </div>
-            <div id="content2_right" class="content2_right">
-                <div class="codeframe">
-                    <div class="codeframe_container">
-                        <img id="code" src="images/sol.png" alt="animate1_09.png">
+                <div class="body1_stair2">
+                    <div  class="font_weith">
+                        Interaction Media StudioInteraction Media StudioInteraction Media StudioInteraction Media StudioInteraction Media StudioInteraction Media StudioInteraction Media
+                    </div>
+                    <div  class="font_weith">
+                        StudioInteraction Media StudioInteraction Media StudioInteraction Media Studio
                     </div>
                 </div>
-                <img id="result" src="images/design_report.png" alt="animate1_09.png">
-            </div>
-        </div>
-    </div>
-    <div class="main_content3">
-        <div class="main_container">
-
-
-            <div id="a" class="content3_left">
-                <div class="content3_codeframe">
-                    <div class="codeframe_container">
-                        <img id="content3_code3" src="images/reentrancy_spec.png" alt="animate1_09.png">
-                        <img id="content3_code2" src="images/reentrancy_sol.png" alt="animate1_09.png">
-                        <img id="content3_code1" src="images/spec.png" alt="animate1_09.png">
+                <div class="body1_stair3">
+                    <div class="body1_stair3_container">
+                        <div class="body1_stair3_box">
+                            <div class="research_stair title title_color">
+                                Research interests
+                            </div>
+                            <div class="research_stair research_items box">
+                                <div class="research_item">
+                                    <i class="iconfont icon-HCI"></i>
+                                    <p>
+                                        User Interface
+                                    </p>
+                                </div>
+                                <div class="research_item">
+                                    <i class="iconfont icon-HCI"></i>
+                                    <p>
+                                        User Interface
+                                    </p>
+                                </div>
+                                <div class="research_item">
+                                    <i class="iconfont icon-HCI"></i>
+                                    <p>
+                                        User Interface
+                                    </p>
+                                </div>
+                                <div class="research_item">
+                                    <i class="iconfont icon-HCI"></i>
+                                    <p>
+                                        User Interface
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<img src="img/members.jpg" alt="">-->
                     </div>
                 </div>
             </div>
-
-            <div id="b" class="content3_right">
-                <h4>
-                    FURTHER VERIFICATION WITH FORMAL SPECIFICATION
-                </h4>
-                <h5>
-                    This service extends our first level of offering with a customized process to formalize the requirement and logic of a contract with our innovative formal specification language. The process not only provides a rigorous examination of the contract to reveal deep logical defects, but also helps to guide our tools to conduct more accurate verification, resulting in a higher-level of assurance in the findings provided in the auditing report.                </h5>
-                <hr color="#183041">
-                <h3>
-                    All instances of smart contract theft or loss – in fact, the very definition of smart contract theft or loss, is fundamentally about differences between implementation and intent.
-                </h3>
-                <h2>
-                    - Vitalik Buterin
-                </h2>
-            </div>
-
-        </div>
-    </div>
-    <div class="main_content4">
-        <div class="main_container">
-            <div class="content4_left">
-                <h4>
-                    FULL FORMAL VERIFICATION
-                </h4>
-                <h5>
-                    Our highest level of service consists of a complete formalization of a smart contract in our specification language, as well as a formal security proof at instruction-level with minimal Trusted Computing Base and maximal assurance. Advanced smart contract properties, such as fairness, would also be proven using techniques from Game Theory, such as proving the existence of a Nash equilibria. The result of this service would be a EAL7-level security auditing report.
-                </h5>
-            </div>
-            <div class="content4_right">
-                <div class="content4_codeframe">
-                    <div id="content4_animate" class="codeframe_container">
-
-                        <img id="content4_code1" src="images/coq.png" alt="animate1_09">
-                        <img id="content4_code2" src="images/vault_spec.png" alt="animate1_09">
-                        <img id="content4_code3" src="images/vault_sol.png" alt="animate1_09">
-
+            <div class="body2">
+                <h1 class="body1_stair1 title">
+                    <p>
+                        Programs
+                    </p>
+                </h1>
+                <div class="body2_container">
+                    <div class="program_card">
+                        <img src="img/magicpaper.jpg" alt="magicpaper">
+                        <p class="program_card_title">
+                            MagicPAPER
+                        </p>
+                    </div>
+                    <div class="program_card">
+                        <img src="img/magicpaper.jpg" alt="magicpaper">
+                        <p class="program_card_title">
+                            MagicPAPER
+                        </p>
                     </div>
                 </div>
+                <h1 class="body2_stair2 button ">
+                    <a href="#">
+                        Learn more
+                    </a>
+                </h1>
+            </div>
+            <div class="body3">
+                <h1 class="body1_stair1 title">
+                    <p>
+                        Publications
+                    </p>
+                </h1>
+                <div class="body3_item">
+                    <div class="body3_get">
+                        <a class="" href="javascript:">
+                            Patent
+                        </a>
+                    </div>
+                    <div class="publication_button">
+                        <a class="" href="javascript:">
+                            Software copyright
+                        </a>
+                    </div>
+                </div>
+                <div id="patent" class="display">
+                    <div class="body3_list prominent">
+                        <div class="list_container">
+                            A new media art deviceA new media art deviceA new media
+                            art deviceA new media art device
+                        </div>
+                    </div>
+                    <div class="body3_list">
+                        <div class="list_container">
+                            A new media art deviceA new media art deviceA new media
+                            art deviceA
+                        </div>
+                    </div>
+                    <div class="body3_list prominent">
+                        <div class="list_container">
+                            A new media art deviceA new media art deviceA new media
+                            art
+                        </div>
+                    </div>
+
+                </div>
+                <div id="copyright">
+                    <div class="body3_list prominent">
+                        <div class="list_container">
+                            A new media art
+                        </div>
+                    </div>
+                    <div class="body3_list">
+                        <div class="list_container">
+                            A new media art deviceA new media art deviceA new media
+                            art deviceA
+                        </div>
+                    </div>
+                    <div class="body3_list prominent">
+                        <div class="list_container">
+                            A new media art deviceA new media art deviceA new media
+                            art
+                        </div>
+                    </div>
+
+                </div>
+
+                <h1 class="body2_stair2 button ">
+                    <a href="#">
+                        Learn more
+                    </a>
+                </h1>
+            </div>
+            <div class="body4">
+                <h1 class="body1_stair1 title body4_title">
+                    <p>
+                        Awards
+                    </p>
+                </h1>
+                <!--<h1 class="body2_stair2 button ">-->
+                    <!--<a href="#">-->
+                        <!--Learn more-->
+                    <!--</a>-->
+                <!--</h1>-->
+            </div>
+            <div class="body5">
+                <h1 class="body1_stair1 title">
+                    <p>
+                        About
+                    </p>
+                </h1>
+                <div class="body5_stair1">
+                    <div class="leader_img">
+                        <img src="img/leader.jpg" alt="">
+                    </div>
+                    <div class="leader_introduce">
+                        <h1 class="body5_title">
+                            <p>
+                                Leader
+                            </p>
+                        </h1>
+                        <p class="leader_name">
+                            Wu Qin
+                        </p>
+                        <p>
+                            A new media art deviceA new media art deviceA new media
+                            art deviceA new media art deviceA new media art deviceA new media art deviceA new media
+                            art deviceA new media art deviceA new media art deviceA new media art deviceA new media
+                            art deviceA new media art deviceA new media art deviceA new media art deviceA new media
+                            art deviceA new media art device
+                        </p>
+                    </div>
+                </div>
+                <div class="body5_stair2">
+                    <div class="body5_stair2_container">
+                        <h1 class="member_title">
+                            <p>
+                                Member
+                            </p>
+                        </h1>
+                        <div class="member_container">
+                            <div class="program_card">
+                                <img src="img/person.jpg" alt="magicpaper">
+                                <p class="person_card_title">
+                                    MagicPAPER
+                                </p>
+                                <p class="person_card_content">
+                                    afdgafdgadfg
+                                </p>
+                            </div>
+                            <div class="program_card">
+                                <img src="img/person.jpg" alt="magicpaper">
+                                <p class="person_card_title">
+                                    MagicPAPER
+                                </p>
+                                <p class="person_card_content">
+                                    afdgafdgadfg
+                                </p>
+                            </div>
+                            <div class="program_card">
+                                <img src="img/person.jpg" alt="magicpaper">
+                                <p class="person_card_title">
+                                    MagicPAPER
+                                </p>
+                                <p class="person_card_content">
+                                    afdgafdgadfg
+                                </p>
+                            </div>
+                            <div class="program_card">
+                                <img src="img/person.jpg" alt="magicpaper">
+                                <p class="person_card_title">
+                                    MagicPAPER
+                                </p>
+                                <p class="person_card_content">
+                                    afdgafdgadfg
+                                </p>
+                            </div>
+                        </div>
+                        <h1 class="body2_stair2 button ">
+                            <a href="#">
+                                Learn more
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="body6">
+                <div class="body5_stair2_container">
+                    <h1 class="member_title">
+                        <p>
+                            Activities
+                        </p>
+                    </h1>
+                </div>
+                <div class="activities">
+                    <div class="activities_container">
+                        <img src="img/activity1.jpg" alt="">
+                        <div class="activities_detail">
+                            <p>
+                                Annul meeting
+                            </p>
+                            <p>
+                                Brainstroming
+                            </p>
+                        </div>
+                        <img src="img/activity2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="body5_stair2_container">
+                    <h1 class="member_title">
+                        <p>
+                            See us
+                        </p>
+                    </h1>
+                </div>
+                <div class="video">
+                    <img src="img/video.jpg" alt="">
+                    <div class="video_intro">
+                        <p>The video of our studio in 2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_footer">
+            <div class="stair1">
 
             </div>
         </div>
-    </div>
-    <div class="main_tail">
-        <div class="main_tail_container">
-            <h1>
-                PARTNERS
-            </h1>
-            <div class="tail_img_box">
-                <img src="images/360ioc.jpg" alt="360ioc.jpg">
-                <img src="images/360ioc.jpg" alt="360ioc.jpg">
-                <img src="images/360ioc.jpg" alt="360ioc.jpg">
-                <img src="images/360ioc.jpg" alt="360ioc.jpg">
-                <img src="images/360ioc.jpg" alt="360ioc.jpg">
-                <img src="images/360ioc.jpg" alt="360ioc.jpg">
-            </div>
-        </div>
-    </div>
-    <footer class="copyright">
-        <h1>
-            Copyright ©
-            2018 SECBIT. All Rights Reserved.
-        </h1>
-    </footer>
-</div>
-
-<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="js/jquery.rotate.min.js"></script>
-
-<script type="text/javascript" src="js/animate1.js"></script>
 
 
-</body>
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/ex_tab.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
 </html>
