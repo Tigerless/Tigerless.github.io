@@ -19,17 +19,28 @@
     margin: 0 auto;
     width: 1080px;
 }
-
+.stair1_box{
+    background-color: #a0a0a0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 564px;
+}
 .stair1{
-    padding: 20px;
-
+    padding: 20px 80px 20px 140px;
+    /*width: auto;*/
 }
 .stair1_left{
     float: left;
+    padding: 0 0 20px 0;
 }
 .stair1_right{
     float:right;
     height: 30px;
+    padding: 0 0 50px 0;
+
 }
 .stair1_right li{
     transition: all .4s ease-in-out;
@@ -38,9 +49,24 @@
     height: 53px;
     padding: 0 15px;
 }
+.header_items a{
+    color: #dbdbdb;
+    font-weight: 600;
+    font-size: 17px;
+    transition: all .4s ease-in-out;
+}
+.header_items a.choose{
+    color: #ffffff;
+}
+.header_items a:hover{
+
+    color: #ffffff;
+    font-size: 17px;
+
+}
 .stair2{
     text-align: center;
-    margin: 190px;
+    padding: 310px;
     font-size: 30px;
     color: #fff;
 }
@@ -118,8 +144,12 @@
     justify-content: space-around;
 }
 .body1_stair3_box{
-    width: 590px;
+    width: 510px;
     text-align: center;
+    padding: 30px 0 10px 140px;
+}
+.stair1_title{
+    padding: 12px 0 45px 0;
 }
 .body1_stair3 img{
     position: absolute;
@@ -127,14 +157,20 @@
     right: 0;
 }
 .research_stair{
-    padding: 50px 0 0 0;
+    padding: 10px 0 10px 0;
 }
+
 .research_items{
 
 }
+.Research_interests{
+    border-bottom: solid #fff 2px;
+    color: #fff;
+    padding: 0 0 4px 0;
+}
 .research_item{
     width: 140px;
-    height: 120px;
+
     padding: 0 0 20px 0;
 
 }
@@ -180,15 +216,15 @@
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
-    padding: 0 130px;
+    padding: 21px 130px;
 }
 .program_card{
     padding: 10px;
     background-color: #fff;
 }
 .program_card img{
-    max-height: 225px;
-    max-width: 280px;
+    max-height: 165px;
+    max-width: 560px;
     vertical-align:middle;
 }
 .program_card_title{
@@ -255,6 +291,16 @@
     width: 1080px;
     margin: 0 auto;
     color: rgba(0,0,0,0.8);
+    position: relative;
+}
+.pub_more{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+.pub_more a{
+    color: #a0a0a0;
+    margin: 0 20px;
 }
 .body4_title{
     color: #fff;
@@ -354,7 +400,6 @@
     margin: 80px 0 0 0;
 }
 .activities_detail p{
-
     font-size: 15px;
     font-weight: 700;
     color: #fff;

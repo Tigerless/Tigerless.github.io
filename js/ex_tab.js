@@ -1,8 +1,11 @@
 window.onload = function () {
     var mytabs = document.getElementsByClassName("body3_item");
     var mytab = mytabs[0].getElementsByTagName("div");
+
+    var Paper = document.getElementById("Paper");
     var patent = document.getElementById("patent");
     var copyright = document.getElementById("copyright");
+    var Awards = document.getElementById("Awards");
 
     console.log(mytab.length)
 
@@ -14,14 +17,24 @@ window.onload = function () {
 
             }
             mytab[this.indexs].className = "body3_get";
-            if(this.indexs%2 === 0){
-                patent.className = "display";
+            Paper.className = "display";
+            patent.className = "display";
+            copyright.className = "display";
+            Awards.className = "display";
+
+            if(this.indexs === 0){
+                Paper.className = "";
+            }
+            if(this.indexs === 1){
+                patent.className = "";
+            }
+            if(this.indexs === 2){
                 copyright.className = "";
             }
-            else{
-                patent.className = "";
-                copyright.className = "display";
+            if(this.indexs === 3){
+                Awards.className = "";
             }
+
         }
     }
 
