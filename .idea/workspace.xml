@@ -124,16 +124,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ex_tab2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/ex_tab2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="animate2.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../tigerdone/tigerdone/js/animate2.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -359,12 +349,12 @@
       <workItem from="1538383462551" duration="455000" />
       <workItem from="1538560684299" duration="652000" />
       <workItem from="1538618104145" duration="782000" />
-      <workItem from="1538630674727" duration="26132000" />
+      <workItem from="1538630674727" duration="26349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157510000" />
+    <option name="totallyTimeSpent" value="157727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="876" y="22" width="1027" height="1025" extended-state="0" />
