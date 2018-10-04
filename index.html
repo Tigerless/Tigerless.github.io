@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/iconfont.css">
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -19,57 +20,64 @@
 
 
         <div class="stair1_box clearfix">
-            <div class="stair1">
-                <div class="stair1_left">
-                    <img src="img/logo.png" alt="logo">
-                </div>
-                <div class="stair1_right">
-                    <nav class="header_items">
-                        <li>
-                            <a id="div1Link" class="choose" href="javascript:">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a id="div2Link" href="javascript:">
-                                Programs
-                            </a>
-                        </li>
-                        <li>
-                            <a id="div3Link" href="javascript:">
-                                Publications
-                            </a>
-                        </li>
-                        <li>
-                            <a id="div4Link" href="javascript:">
-                                Events
-                            </a>
-                        </li>
-                        <li>
-                            <a id="div5Link" href="javascript:">
-                                About
-                            </a>
-                        </li>
-                    </nav>
-                </div>
+            <div id="the_header" class="stair1">
+                <a id="logo" class="stair1_left logo_top">
+                    <img class="my_fadein" src="img/logo.png" alt="logo">
+                </a>
+                <nav id="header_nav"  class="header_items my_fadein header_items_pien">
+                    <a id="div1Link" class="choose" href="javascript:">
+                        Home
+                    </a>
+                    <a id="div2Link" href="javascript:">
+                        Programs
+                    </a>
+                    <a id="div3Link" href="javascript:">
+                        Publications
+                    </a>
+                    <a id="div4Link" href="javascript:">
+                        Events
+                    </a>
+                    <a id="div5Link" href="javascript:">
+                        About
+                    </a>
+                </nav>
+                <script type="text/javascript">
+                    window.onscroll = function() {
+                        var scrollY = window.scrollY;
+                        if(scrollY <= 0){
+//                            console.log("okok")
+                            $("#logo").addClass("logo_top");
+                            $("#header_nav").addClass("header_items_pien");
+                            $("#the_header").removeClass("stair1_pine");
+
+                        }
+                        else {
+                            $("#logo").removeClass("logo_top");
+                            $("#header_nav").removeClass("header_items_pien");
+                            $("#the_header").addClass("stair1_pine");
+
+                        }
+                    }
+                </script>
             </div>
         </div>
-        <div class="main_box">
-            <div class="main_header clearparentDiv">
-
-                <div class="stair2">
-                    Interactive Media Studio
+        <div id="div1" class="main_box">
+            <div class="main_header">
+                <div id="wrapper" class="stair2 my_fadein">
+                    <h1>
+                        Interactive Media Studio
+                    </h1>
                 </div>
             </div>
         </div>
         <div class="main_body">
-            <div id="div1" class="body1">
+            <div class="body1">
                 <div class="body1_stair1 title">
-                    <p>
+                    <p class="prepare_fadein">
                         Meet our team
                     </p>
                 </div>
-                <div class="body1_stair2">
+                <div class="body1_stair2 prepare_fadein">
                     <div  class="font_weith">
                         <p>
                             The Interactive Media Studio  in Chengdu University of Information Technology is an interdisciplinary 
@@ -88,7 +96,7 @@
                 </div>
                 <div class="body1_stair3">
                     <div class="body1_stair3_container">
-                        <div class="body1_stair3_box">
+                        <div class="body1_stair3_box prepare_fadein">
                             <div class="stair1_title title title_color">
                                 <a class="Research_interests" href="javascript:">
                                     Research interests
@@ -127,7 +135,7 @@
                             </div>
                         </div>
                         <div class="img_box">
-                            <img src="img/members.jpg" alt="">
+                            <img class="prepare_fadein" src="img/members.jpg" alt="">
 
                         </div>
                     </div>
@@ -135,14 +143,14 @@
             </div>
             <div id="div2" class="body2">
                 <h1 class="body1_stair1 title">
-                    <p>
+                    <p class="prepare_fadein">
                         Programs
                     </p>
                 </h1>
 
                 <div class="body2_container">
                     <a href="program1.html">
-                        <div class="program_card">
+                        <div class="program_card prepare_fadein">
                             <img src="img/shibi.jpg" alt="magicpaper">
                             <p class="program_card_title">
                                 The Legend of ‘Shi-Bi’
@@ -150,7 +158,7 @@
                         </div>
                     </a>
                     <a href="program1.html">
-                        <div class="program_card">
+                        <div class="program_card prepare_fadein">
                             <img src="img/magicpaper.jpg" alt="magicpaper">
                             <p class="program_card_title">
                                 MagicPAPER
@@ -159,10 +167,9 @@
                     </a>
 
                 </div>
-
                 <div class="body2_container">
                     <a href="program1.html">
-                        <div class="program_card">
+                        <div class="program_card prepare_fadein">
                             <img src="img/magicpaper.jpg" alt="magicpaper">
                             <p class="program_card_title">
                                 See your voice
@@ -171,7 +178,7 @@
                     </a>
 
                     <a href="program1.html">
-                        <div class="program_card">
+                        <div class="program_card prepare_fadein">
                             <img src="img/object.jpg" alt="magicpaper">
                             <p class="program_card_title">
                                 Object Recognition
@@ -180,8 +187,7 @@
                     </a>
 
                 </div>
-
-                <div class="body2_container">
+                <div class="body2_container prepare_fadein">
                     <a href="program1.html">
                         <div class="program_card">
                             <img src="img/magicpaper.jpg" alt="magicpaper">
@@ -205,8 +211,8 @@
                 </div>
                 <div class="body2_container display">
                     <a href="program1.html">
-                        <div class="program_card">
-                            <img src="img/magicpaper.jpg" alt="magicpaper">
+                        <div class="program_card ">
+                            <img class="prepare_fadein" src="img/magicpaper.jpg" alt="magicpaper">
                             <p class="program_card_title">
                                 Table War
                             </p>
@@ -250,28 +256,19 @@
 
 
                 <h1 class="body2_stair2 button ">
-                    <a id="program_more" href="javascript:">
+                    <a id="program_more" class="prepare_fadein" href="javascript:">
                         Learn more
                     </a>
                     <script>
                         $(document).ready(function(){
                             var view_num = 2;
-                            console.log(view_num);
+                            console.log("view_num"+view_num);
 
                             $("#program_more").on("click", function () {
                                 view_num += 1;
                                 console.log("okoko");
                                 $(".body2_container").eq(view_num).removeClass("display");
 
-//                                $(".body2_container").eq(view_num-1).fadeIn(3000);
-//
-//                                $("#div2").fadeToggle("slow");
-//                                $("#test1111").fadeToggle("slow");
-
-//                                for(var i = 0; i<view_num; i++){
-////                                    $(".body2_container").eq(i).removeClass("display");
-//                                    $(".body2_container").eq(i).fadeIn("slow");
-//                                }
 
                             });
                         });
@@ -280,290 +277,292 @@
             </div>
             <div id="div3" class="body3">
                 <h1 class="body1_stair1 title">
-                    <p>
+                    <p class="prepare_fadein">
                         Publications
                     </p>
                 </h1>
 
-                <div class="body3_item">
-                    <div class="body3_get">
-                        <a class="" href="javascript:">
+                <div class="body3_item prepare_fadein">
+                    <div class="body3_get publication_choose">
+                        <a class="publication_button" href="javascript:">
                             Paper
                         </a>
                     </div>
-                    <div class="publication_button">
-                        <a class="" href="javascript:">
+                    <div class="body3_get">
+                        <a class="publication_button" href="javascript:">
                             Patent
                         </a>
                     </div>
-                    <div class="publication_button">
-                        <a class="" href="javascript:">
+                    <div class="body3_get">
+                        <a class="publication_button" href="javascript:">
                             Software copyright
                         </a>
                     </div>
-                    <div class="publication_button">
-                        <a class="" href="javascript:">
+                    <div class="body3_get">
+                        <a class="publication_button" href="javascript:">
                             Awards
                         </a>
                     </div>
                 </div>
+                <ul>
+                    <div id="Publications0">
+                        <div class="body3_list prominent prepare_fadein">
+                            <div class="list_container">
+                                The Legend of ‘Shi-Bi’: An Augmented Reality Mobile Game Based on the Cultural Stories of the Qiang Minority
+                                <div class="pub_more">
+                                    <a href="javascript:">
+                                        <!--<i class="iconfont icon-HCI"></i>-->
+                                        <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
+                                        Paper
+                                    </a>
+                                    <a href="javascript:">
+                                        <!--<i class="iconfont icon-HCI"></i>-->
+                                        <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
 
-                <div id="Paper">
-                    <div class="body3_list prominent">
-                        <div class="list_container">
-                            The Legend of ‘Shi-Bi’: An Augmented Reality Mobile Game Based on the Cultural Stories of the Qiang Minority
-                            <div class="pub_more">
-                                <a href="javascript:">
-                                    <!--<i class="iconfont icon-HCI"></i>-->
-                                    <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
-                                    Paper
-                                </a>
-                                <a href="javascript:">
-                                    <!--<i class="iconfont icon-HCI"></i>-->
-                                    <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
+                                        video
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body3_list prepare_fadein">
+                            <div class="list_container">
+                                Anmoji: A Massage Robot Based on the Head and Shoulders Control
 
-                                    video
-                                </a>
+                                <div class="pub_more">
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
+
+                                        Paper
+                                    </a>
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
+
+                                        video
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body3_list prominent prepare_fadein">
+                            <div class="list_container">
+                                为弱听障用户提供的声音可视化互动装置
+                                ——See Your Voice
+
+                                <div class="pub_more">
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
+                                        Paper
+                                    </a>
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
+                                        video
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body3_list prepare_fadein">
+                            <div class="list_container">
+                                基于羌语的语料库的建立和系统设计
+
+                                <div class="pub_more">
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
+                                        Paper
+                                    </a>
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
+
+                                        video
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body3_list prominent prepare_fadein">
+                            <div class="list_container">
+                                “释比传说”基于羌族传统故事的 AR 手机游戏
+
+                                <div class="pub_more">
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
+
+
+                                        Paper
+                                    </a>
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
+
+                                        video
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body3_list prepare_fadein">
+                            <div class="list_container">
+                                Cognition based Context-aware Cloud Computing for intelligent robotic systems in mobile education
+
+                                <div class="pub_more">
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
+
+
+                                        Paper
+                                    </a>
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
+
+                                        video
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body3_list prominent prepare_fadein">
+                            <div class="list_container">
+                                Object recognition-based second language learning educational robot system for Chinese preschool children
+
+                                <div class="pub_more">
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
+
+                                        Paper
+                                    </a>
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
+
+                                        video
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="body3_list">
-                        <div class="list_container">
-                            Anmoji: A Massage Robot Based on the Head and Shoulders Control
-
-                            <div class="pub_more">
-                                <a href="javascript:">
-                                    <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
-
-                                    Paper
-                                </a>
-                                <a href="javascript:">
-                                    <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
-
-                                    video
-                                </a>
+                    <div id="Publications1" class="display">
+                        <div class="body3_list prominent">
+                            <div class="list_container">
+                                A desktop projection interaction technology (utility model) with an air-touch operation
                             </div>
                         </div>
-                    </div>
-                    <div class="body3_list prominent">
-                        <div class="list_container">
-                            为弱听障用户提供的声音可视化互动装置
-                            ——See Your Voice
-
-                            <div class="pub_more">
-                                <a href="javascript:">
-                                    <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
-                                    Paper
-                                </a>
-                                <a href="javascript:">
-                                    <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
-                                    video
-                                </a>
+                        <div class="body3_list">
+                            <div class="list_container">
+                                Separable intelligent fire alarm system (utility model)
                             </div>
                         </div>
-                    </div>
-                    <div class="body3_list">
-                        <div class="list_container">
-                            基于羌语的语料库的建立和系统设计
-
-                            <div class="pub_more">
-                                <a href="javascript:">
-                                    <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
-                                    Paper
-                                </a>
-                                <a href="javascript:">
-                                    <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
-
-                                    video
-                                </a>
+                        <div class="body3_list prominent">
+                            <div class="list_container">
+                                A new media art device (utility model) for projection interaction
                             </div>
                         </div>
-                    </div>
-                    <div class="body3_list prominent">
-                        <div class="list_container">
-                            “释比传说”基于羌族传统故事的 AR 手机游戏
-
-                            <div class="pub_more">
-                                <a href="javascript:">
-                                    <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
-
-
-                                    Paper
-                                </a>
-                                <a href="javascript:">
-                                    <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
-
-                                    video
-                                </a>
+                        <div class="body3_list">
+                            <div class="list_container">
+                                A new media art device (utility model) for augmented reality light and shadow interaction
                             </div>
                         </div>
+
                     </div>
-                    <div class="body3_list">
-                        <div class="list_container">
-                            Cognition based Context-aware Cloud Computing for intelligent robotic systems in mobile education
-
-                            <div class="pub_more">
-                                <a href="javascript:">
-                                    <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
-
-
-                                    Paper
-                                </a>
-                                <a href="javascript:">
-                                    <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
-
-                                    video
-                                </a>
+                    <div id="Publications2" class="display">
+                        <div class="body3_list prominent">
+                            <div class="list_container">
+                                成都信息工程大学计算机学院官方网站
                             </div>
                         </div>
-                    </div>
-                    <div class="body3_list prominent">
-                        <div class="list_container">
-                            Object recognition-based second language learning educational robot system for Chinese preschool children
-
-                            <div class="pub_more">
-                                <a href="javascript:">
-                                    <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
-
-                                    Paper
-                                </a>
-                                <a href="javascript:">
-                                    <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
-
-                                    video
-                                </a>
+                        <div class="body3_list">
+                            <div class="list_container">
+                                弘扬羌族文化——羌族神话故事手游App
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div id="patent" class="display">
-                    <div class="body3_list prominent">
-                        <div class="list_container">
-                            A desktop projection interaction technology (utility model) with an air-touch operation
-                        </div>
-                    </div>
-                    <div class="body3_list">
-                        <div class="list_container">
-                            Separable intelligent fire alarm system (utility model)
-                        </div>
-                    </div>
-                    <div class="body3_list prominent">
-                        <div class="list_container">
-                            A new media art device (utility model) for projection interaction
-                        </div>
-                    </div>
-                    <div class="body3_list">
-                        <div class="list_container">
-                            A new media art device (utility model) for augmented reality light and shadow interaction
-                        </div>
-                    </div>
-
-                </div>
-                <div id="copyright" class="display">
-                    <div class="body3_list prominent">
-                        <div class="list_container">
-                            成都信息工程大学计算机学院官方网站
-                        </div>
-                    </div>
-                    <div class="body3_list">
-                        <div class="list_container">
-                            弘扬羌族文化——羌族神话故事手游App
-                        </div>
-                    </div>
-                    <div class="body3_list prominent">
-                        <div class="list_container">
-                            Video Go - 短视频社交应用App
-                        </div>
-                    </div>
-
-                </div>
-                <div id="Awards" class="display">
-                    <div class="body3_list prominent">
-                        <div class="list_container">
-                            The 3rd Fengyungu Cup Internet + Innovation and Entrepreneurship Competition(2017)
-
-                            <div class="pub_more">
-                                <a href="javascript:">
-                                    <!--<i class="iconfont icon-HCI"></i>-->
-                                    <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
-                                    Program detail
-                                </a>
+                        <div class="body3_list prominent">
+                            <div class="list_container">
+                                Video Go - 短视频社交应用App
                             </div>
                         </div>
+
                     </div>
-                    <div class="body3_list">
-                        <div class="list_container">
-                            National Science Competition(2017)
-                            <div class="pub_more">
-                                <a href="javascript:">
-                                    <!--<i class="iconfont icon-HCI"></i>-->
-                                    <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
-                                    Program detail
-                                </a>
+                    <div id="Publications3" class="display">
+                        <div class="body3_list prominent">
+                            <div class="list_container">
+                                The 3rd Fengyungu Cup Internet + Innovation and Entrepreneurship Competition(2017)
+
+                                <div class="pub_more">
+                                    <a href="javascript:">
+                                        <!--<i class="iconfont icon-HCI"></i>-->
+                                        <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
+                                        Program detail
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="body3_list prominent">
-                        <div class="list_container">
-                            Computer Application Design Competition(2017)
-
-                            <div class="pub_more">
-                                <a href="javascript:">
-                                    <!--<i class="iconfont icon-HCI"></i>-->
-                                    <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
-                                    Program detail
-                                </a>
-
+                        <div class="body3_list">
+                            <div class="list_container">
+                                National Science Competition(2017)
+                                <div class="pub_more">
+                                    <a href="javascript:">
+                                        <!--<i class="iconfont icon-HCI"></i>-->
+                                        <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
+                                        Program detail
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="body3_list">
-                        <div class="list_container">
-                            Computer Application Design Competition(2017)
+                        <div class="body3_list prominent">
+                            <div class="list_container">
+                                Computer Application Design Competition(2017)
 
-                            <div class="pub_more">
-                                <a href="javascript:">
-                                    <!--<i class="iconfont icon-HCI"></i>-->
-                                    <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
-                                    Program detail
-                                </a>
+                                <div class="pub_more">
+                                    <a href="javascript:">
+                                        <!--<i class="iconfont icon-HCI"></i>-->
+                                        <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
+                                        Program detail
+                                    </a>
 
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="body3_list prominent">
-                        <div class="list_container">
-                            Computer Application Design Competition(2017)
+                        <div class="body3_list">
+                            <div class="list_container">
+                                Computer Application Design Competition(2017)
 
-                            <div class="pub_more">
-                                <a href="javascript:">
-                                    <!--<i class="iconfont icon-HCI"></i>-->
-                                    <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
-                                    Program detail
-                                </a>
+                                <div class="pub_more">
+                                    <a href="javascript:">
+                                        <!--<i class="iconfont icon-HCI"></i>-->
+                                        <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
+                                        Program detail
+                                    </a>
 
+                                </div>
                             </div>
                         </div>
+                        <div class="body3_list prominent">
+                            <div class="list_container">
+                                Computer Application Design Competition(2017)
+
+                                <div class="pub_more">
+                                    <a href="javascript:">
+                                        <!--<i class="iconfont icon-HCI"></i>-->
+                                        <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
+                                        Program detail
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
 
+                </ul>
 
-                </div>
 
-
-                <h1 class="body2_stair2 button ">
-                    <a href="#">
+                <h1 class="body2_stair2 button prepare_fadein">
+                    <a id="Publications_more" href="javascript:">
                         Learn more
                     </a>
                 </h1>
             </div>
             <div id="div4" class="body4">
                 <h1 class="body1_stair1 title body4_title">
-                    <p>
+                    <p class="prepare_fadein">
                         Events
                     </p>
                 </h1>
                 <div class="body4_main">
-                    <div class="body4_main_container clearfix">
+                    <div class="body4_main_container clearfix prepare_fadein">
                         <div class="events_stair1_left">
                             <a href="event1.html">
                                 <img src="img/event1.jpg" alt="event1">
@@ -691,29 +690,16 @@
 
 
                 </div>
-                <h1 class="body2_stair2 button ">
+                <h1 class="body2_stair2 button prepare_fadein">
                     <a id="Events_more" href="javascript:">
                         View more
                     </a>
                     <script>
                         $(document).ready(function(){
                             var Events_num = 0;
-                            console.log("Events_num"+Events_num);
-
                             $("#Events_more").on("click", function () {
                                 Events_num += 1;
-                                console.log("okoko");
                                 $(".body4_main_container").eq(Events_num).removeClass("display");
-
-//                                $(".body2_container").eq(view_num-1).fadeIn(3000);
-//
-//                                $("#div2").fadeToggle("slow");
-//                                $("#test1111").fadeToggle("slow");
-
-//                                for(var i = 0; i<view_num; i++){
-////                                    $(".body2_container").eq(i).removeClass("display");
-//                                    $(".body2_container").eq(i).fadeIn("slow");
-//                                }
 
                             });
                         });
@@ -721,15 +707,15 @@
                 </h1>
             </div>
             <div id="div5" class="body5">
-                <h1 class="body1_stair1 title">
+                <h1 class="body1_stair1 title prepare_fadein">
                     <p>
                         About
                     </p>
                 </h1>
-                <div class="video">
+                <div class="video prepare_fadein">
                     <img src="img/video.jpg" alt="video">
                 </div>
-                <div class="body5_stair1">
+                <div class="body5_stair1 prepare_fadein">
                     <div class="leader_img">
                         <img src="img/leader.jpg" alt="leader">
                     </div>
@@ -749,12 +735,12 @@
                 </div>
                 <div class="body5_stair2">
                     <div class="body5_stair2_container">
-                        <h1 class="member_title">
+                        <h1 class="member_title prepare_fadein">
                             <p>
                                 Member
                             </p>
                         </h1>
-                        <div class="member_container">
+                        <div class="member_container prepare_fadein">
                             <div class="program_card member_card">
                                 <img src="img/person.jpg" alt="magicpaper">
                                 <p class="person_card_title">
@@ -792,7 +778,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="member_container">
+                        <div class="member_container prepare_fadein">
                             <div class="program_card member_card">
                                 <img src="img/person.jpg" alt="magicpaper">
                                 <p class="person_card_title">
@@ -830,7 +816,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="member_container">
+                        <div class="member_container prepare_fadein">
                             <div class="program_card member_card">
                                 <img src="img/person.jpg" alt="magicpaper">
                                 <p class="person_card_title">
@@ -869,7 +855,7 @@
                             </div>
                         </div>
 
-                        <h1 class="body2_stair2 button ">
+                        <h1 class="body2_stair2 button prepare_fadein">
                             <a href="javascript:">
                                 Learn more
                             </a>
@@ -879,14 +865,14 @@
             </div>
             <div class="body6">
                 <div class="body5_stair2_container">
-                    <h1 class="member_title">
+                    <h1 class="member_title prepare_fadein">
                         <p>
                             Activities
                         </p>
                     </h1>
                 </div>
                 <div class="activities">
-                    <div class="activities_container">
+                    <div class="activities_container prepare_fadein">
                         <img src="img/activity3.jpg" alt="">
                         <img src="img/activity2.jpg" alt="">
                         <img src="img/activity1.jpg" alt="">
@@ -937,11 +923,12 @@
                 </div>
             </div>
         </div>
+
+        <script src="js/fadein.js"></script>
         <script src="js/ex_tab.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
                 $("#div1Link").click(function() {
-
                     $("html, body").animate({
                         scrollTop: $("#div1").offset().top }, {duration: 500,easing: "swing"});
                     return false;});
@@ -950,20 +937,22 @@
                     $("html, body").animate({
                         scrollTop: $("#div2").offset().top }, {duration: 500,easing: "swing"});
                     return false;});
+
                 $("#div3Link").click(function() {
                     $("html, body").animate({
                         scrollTop: $("#div3").offset().top }, {duration: 500,easing: "swing"});
                     return false;});
+
                 $("#div4Link").click(function() {
                     $("html, body").animate({
                         scrollTop: $("#div4").offset().top }, {duration: 500,easing: "swing"});
                     return false;});
+
                 $("#div5Link").click(function() {
                     $("html, body").animate({
                         scrollTop: $("#div5").offset().top }, {duration: 500,easing: "swing"});
                     return false;});
             });
-
         </script>
 
     </body>
