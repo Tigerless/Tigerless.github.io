@@ -467,6 +467,85 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="display body3_list">
+                            <div class="list_container">
+                                Intelligent Smoke Alarm System with Wireless Sensor Network
+                                 using ZigBee
+                                <div class="pub_more">
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
+                                        <span>
+                                            Paper
+                                        </span>
+                                    </a>
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
+                                        <span>
+                                            video
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="display body3_list prominent">
+                            <div class="list_container">
+                                See Your Voice: An Interactive Device of Speech Visualizations for Users with A Poor Hearing
+                                <div class="pub_more">
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
+                                        <span>
+                                            Paper
+                                        </span>
+                                    </a>
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
+                                        <span>
+                                            video
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="display body3_list">
+                            <div class="list_container">
+                                Table War : A Tower-Defense Game Device with Augmented Reality Projection
+
+                                <div class="pub_more">
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
+                                        <span>
+                                            Paper
+                                        </span>
+                                    </a>
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
+                                        <span>
+                                            video
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="display body3_list prominent">
+                            <div class="list_container">
+                                MagicPAPER: An Integrated Shadow-Art Hardware Device Enabling Touch Interaction on Paper
+                                <div class="pub_more">
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_paper.png" alt="icon_paper">
+                                        <span>
+                                            Paper
+                                        </span>
+                                    </a>
+                                    <a href="javascript:">
+                                        <img class="paper_img" src="img/icon_video.png" alt="icon_paper">
+                                        <span>
+                                            video
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <div id="Publications1" class="display">
                         <div class="body3_list prominent">
@@ -560,6 +639,20 @@
                     <a id="Publications_more" href="javascript:">
                         Learn more
                     </a>
+                    <script>
+                        $(document).ready(function(){
+                            var Publications_num = 6;
+                            $("#Publications_more").on("click", function () {
+                                Publications_num += 1;
+                                $("#Publications0 > .body3_list").eq(Publications_num).removeClass("display")
+                                    .addClass("prepare_fadein").animate({opacity:1,filter:'Alpha(opacity=90)'},500);
+                                Publications_num += 1;
+                                $("#Publications0 > .body3_list").eq(Publications_num).removeClass("display")
+                                    .addClass("prepare_fadein").animate({opacity:1,filter:'Alpha(opacity=90)'},500);
+
+                            });
+                        });
+                    </script>
                 </h1>
             </div>
             <div id="div4" class="body4">
