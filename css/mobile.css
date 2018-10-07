@@ -109,7 +109,7 @@
     margin: 9px 0 0 0;
 }
 .logo_top img{
-     width: 200px;
+     width: 150px;
 }
 
 .header_items{
@@ -128,20 +128,19 @@
 .header_items a{
     color: #dbdbdb;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 13px;
     transition: all .4s ease-in-out;
-    padding: 0 10px;
+    padding: 0 8px;
     /* margin: 10px 10px; */
     /* height: 40px; */
     line-height: 30px;
 }
 .header_items_pien{
     /* height: 83px; */
-    padding: 30px 0 0 0;
+    padding: 19px 0 0 0;
 }
 .header_items_pien a{
-    font-size: 20px;
-
+    font-size: 16px;
 }
 .header_items a.choose{
     color: #ffffff;
@@ -156,7 +155,7 @@
 .stair2 h1{
     text-align: center;
     /* padding: 42% 0; */
-    font-size: 25px;
+    font-size: 45px;
     color: #fff;
     position: absolute;
     top: 43%;
@@ -424,6 +423,7 @@
     width: 680px;
     /* padding: 0 153px 20px 153px; */
     margin: 30px auto;
+    padding: 0 40px;
 }
 .body3_get{
     padding: 0 30px;
@@ -453,7 +453,7 @@
     display: none;
 }
 .list_container{
-    padding: 20px 90px 20px 20px;
+    padding: 20px 100px 20px 20px;
     font-size: 15px;
     font-weight: 700;
     width: 680px;
@@ -464,8 +464,11 @@
 .pub_more{
     position: absolute;
     right: -8px;
-    top: 16px;
+    top: 19px;
     width: 90px;
+}
+.pub_more span{
+    display: none;
 }
 
 .pub_more a{
@@ -488,7 +491,7 @@
     line-height: 30px;
 }
 .paper_img{
-     width: 20px;
+     width: 30px;
      position: relative;
      top: -1px;
      left: -4px;
