@@ -285,7 +285,8 @@
                             $("#program_more").on("click", function () {
                                 view_num += 1;
                                 console.log("okoko");
-                                $(".body2_container").eq(view_num).removeClass("display");
+                                $(".body2_container").eq(view_num).removeClass("display")
+                                    .addClass("prepare_fadein").animate({opacity:1,filter:'Alpha(opacity=90)'},500);
 
 
                             });
@@ -516,7 +517,9 @@
                                     <a href="javascript:">
                                         <!--<i class="iconfont icon-HCI"></i>-->
                                         <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
-                                        Program detail
+                                        <span>
+                                            Program detail
+                                        </span>
                                     </a>
                                 </div>
                             </div>
@@ -528,7 +531,9 @@
                                     <a href="javascript:">
                                         <!--<i class="iconfont icon-HCI"></i>-->
                                         <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
-                                        Program detail
+                                        <span>
+                                            Program detail
+                                        </span>
                                     </a>
                                 </div>
                             </div>
@@ -540,7 +545,9 @@
                                     <a href="javascript:">
                                         <!--<i class="iconfont icon-HCI"></i>-->
                                         <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
-                                        Program detail
+                                        <span>
+                                            Program detail
+                                        </span>
                                     </a>
                                 </div>
                             </div>
@@ -699,7 +706,9 @@
                             var Events_num = 0;
                             $("#Events_more").on("click", function () {
                                 Events_num += 1;
-                                $(".body4_main_container").eq(Events_num).removeClass("display");
+                                $(".body4_main_container").eq(Events_num).removeClass("display")
+                                    .addClass("prepare_fadein").animate({opacity:1,filter:'Alpha(opacity=90)'},500);
+
                             });
                         });
                     </script>
@@ -741,74 +750,36 @@
                         </h1>
                         <div class="member_container prepare_fadein">
                             <div class="program_card member_card">
-                                <img src="img/person.jpg" alt="magicpaper">
+                                <img src="img/person/111.jpg" alt="magicpaper">
                                 <p class="person_card_title">
-                                    MagicPAPER
+                                    Jiashuo Cao(Grade 2014)
                                 </p>
                                 <p class="person_card_content">
                                     afdgafdgadfg
                                 </p>
                             </div>
                             <div class="program_card member_card">
-                                <img src="img/person.jpg" alt="magicpaper">
+                                <img src="img/person/112.jpg" alt="magicpaper">
                                 <p class="person_card_title">
-                                    MagicPAPER
+                                    Xueming Li(Grade 2016)
                                 </p>
                                 <p class="person_card_content">
                                     afdgafdgadfg
                                 </p>
                             </div>
                             <div class="program_card member_card">
-                                <img src="img/person.jpg" alt="magicpaper">
+                                <img src="img/person/113.jpg" alt="magicpaper">
                                 <p class="person_card_title">
-                                    MagicPAPER
+                                    XingRu Chen(Grade 2016)
                                 </p>
                                 <p class="person_card_content">
                                     afdgafdgadfg
                                 </p>
                             </div>
                             <div class="program_card member_card">
-                                <img src="img/person.jpg" alt="magicpaper">
+                                <img src="img/person/114.jpg" alt="magicpaper">
                                 <p class="person_card_title">
-                                    MagicPAPER
-                                </p>
-                                <p class="person_card_content">
-                                    afdgafdgadfg
-                                </p>
-                            </div>
-                        </div>
-                        <div class="member_container prepare_fadein">
-                            <div class="program_card member_card">
-                                <img src="img/person.jpg" alt="magicpaper">
-                                <p class="person_card_title">
-                                    MagicPAPER
-                                </p>
-                                <p class="person_card_content">
-                                    afdgafdgadfg
-                                </p>
-                            </div>
-                            <div class="program_card member_card">
-                                <img src="img/person.jpg" alt="magicpaper">
-                                <p class="person_card_title">
-                                    MagicPAPER
-                                </p>
-                                <p class="person_card_content">
-                                    afdgafdgadfg
-                                </p>
-                            </div>
-                            <div class="program_card member_card">
-                                <img src="img/person.jpg" alt="magicpaper">
-                                <p class="person_card_title">
-                                    MagicPAPER
-                                </p>
-                                <p class="person_card_content">
-                                    afdgafdgadfg
-                                </p>
-                            </div>
-                            <div class="program_card member_card">
-                                <img src="img/person.jpg" alt="magicpaper">
-                                <p class="person_card_title">
-                                    MagicPAPER
+                                    Yuwei Li
                                 </p>
                                 <p class="person_card_content">
                                     afdgafdgadfg
@@ -817,36 +788,151 @@
                         </div>
                         <div class="member_container prepare_fadein">
                             <div class="program_card member_card">
-                                <img src="img/person.jpg" alt="magicpaper">
+                                <img src="img/person/115.jpg" alt="magicpaper">
                                 <p class="person_card_title">
-                                    MagicPAPER
+                                    Yanjun Chen
                                 </p>
                                 <p class="person_card_content">
                                     afdgafdgadfg
                                 </p>
                             </div>
                             <div class="program_card member_card">
-                                <img src="img/person.jpg" alt="magicpaper">
+                                <img src="img/person/116.jpg" alt="magicpaper">
                                 <p class="person_card_title">
-                                    MagicPAPER
+                                    Yanlan Zhao
                                 </p>
                                 <p class="person_card_content">
                                     afdgafdgadfg
                                 </p>
                             </div>
                             <div class="program_card member_card">
-                                <img src="img/person.jpg" alt="magicpaper">
+                                <img src="img/person/117.jpg" alt="magicpaper">
                                 <p class="person_card_title">
-                                    MagicPAPER
+                                    Yinjie Huang
                                 </p>
                                 <p class="person_card_content">
                                     afdgafdgadfg
                                 </p>
                             </div>
                             <div class="program_card member_card">
-                                <img src="img/person.jpg" alt="magicpaper">
+                                <img src="img/person/118.jpg" alt="magicpaper">
                                 <p class="person_card_title">
-                                    MagicPAPER
+                                    Yu wang
+                                </p>
+                                <p class="person_card_content">
+                                    afdgafdgadfg
+                                </p>
+                            </div>
+                        </div>
+                        <div class="member_container prepare_fadein">
+                            <div class="program_card member_card">
+                                <img src="img/person/119.jpg" alt="magicpaper">
+                                <p class="person_card_title">
+                                    Mengting Wang
+                                </p>
+                                <p class="person_card_content">
+                                    afdgafdgadfg
+                                </p>
+                            </div>
+                            <div class="program_card member_card">
+                                <img src="img/person/120.jpg" alt="magicpaper">
+                                <p class="person_card_title">
+                                    Rao Xu
+                                </p>
+                                <p class="person_card_content">
+                                    afdgafdgadfg
+                                </p>
+                            </div>
+                            <div class="program_card member_card">
+                                <img src="img/person/121.jpg" alt="magicpaper">
+                                <p class="person_card_title">
+                                    Tong Su
+                                </p>
+                                <p class="person_card_content">
+                                    afdgafdgadfg
+                                </p>
+                            </div>
+                            <div class="program_card member_card">
+                                <img src="img/person//122.jpg" alt="magicpaper">
+                                <p class="person_card_title">
+                                    Yuming jiang
+                                </p>
+                                <p class="person_card_content">
+                                    afdgafdgadfg
+                                </p>
+                            </div>
+                        </div>
+                        <div class="display member_container">
+                            <div class="program_card member_card">
+                                <img src="img/person/123.jpg" alt="magicpaper">
+                                <p class="person_card_title">
+                                    Ji Huang
+                                </p>
+                                <p class="person_card_content">
+                                    afdgafdgadfg
+                                </p>
+                            </div>
+                            <div class="program_card member_card">
+                                <img src="img/person/124.jpg" alt="magicpaper">
+                                <p class="person_card_title">
+                                    Zixiong Qin
+                                </p>
+                                <p class="person_card_content">
+                                    afdgafdgadfg
+                                </p>
+                            </div>
+                            <div class="program_card member_card">
+                                <img src="img/person/125.jpg" alt="magicpaper">
+                                <p class="person_card_title">
+                                    YuTing Chang
+                                </p>
+                                <p class="person_card_content">
+                                    afdgafdgadfg
+                                </p>
+                            </div>
+                            <div class="program_card member_card">
+                                <img src="img/person//126.jpg" alt="magicpaper">
+                                <p class="person_card_title">
+                                    Fuyi Cui
+                                </p>
+                                <p class="person_card_content">
+                                    afdgafdgadfg
+                                </p>
+                            </div>
+                        </div>
+                        <div class="display member_container">
+                            <div class="program_card member_card">
+                                <img src="img/person/127.jpg" alt="magicpaper">
+                                <p class="person_card_title">
+                                    Lunyu Shang
+                                </p>
+                                <p class="person_card_content">
+                                    afdgafdgadfg
+                                </p>
+                            </div>
+                            <div class="program_card member_card">
+                                <img src="img/person/128.jpg" alt="magicpaper">
+                                <p class="person_card_title">
+                                    Yao Ceng
+                                </p>
+                                <p class="person_card_content">
+                                    afdgafdgadfg
+                                </p>
+                            </div>
+                            <div class="program_card member_card">
+                                <img src="img/person/129.jpg" alt="magicpaper">
+                                <p class="person_card_title">
+                                    Jingyun Yang
+
+                                </p>
+                                <p class="person_card_content">
+                                    afdgafdgadfg
+                                </p>
+                            </div>
+                            <div class="program_card member_card">
+                                <img src="img/person//130.jpg" alt="magicpaper">
+                                <p class="person_card_title">
+                                    Rui Xu
                                 </p>
                                 <p class="person_card_content">
                                     afdgafdgadfg
@@ -855,9 +941,20 @@
                         </div>
 
                         <h1 class="body2_stair2 button prepare_fadein">
-                            <a href="javascript:">
-                                Learn more
+                            <a id="member_container" href="javascript:">
+                                View more
                             </a>
+                            <script>
+                                $(document).ready(function(){
+
+                                    var member_num = 2;
+                                    $("#member_container").on("click", function () {
+                                        member_num += 1;
+                                        $(".member_container").eq(member_num).removeClass("display")
+                                            .addClass("prepare_fadein").animate({opacity:1,filter:'Alpha(opacity=90)'},500);
+                                    });
+                                });
+                            </script>
                         </h1>
                     </div>
                 </div>
