@@ -5,12 +5,31 @@
         <title>
             ims
         </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/iconfont.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" media="screen and (max-width:828px)" href="css/mobile.css" type="text/css">
+        <link rel="stylesheet" media="screen and (min-width:829px)"  href="css/index.css" type="text/css">
+
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+        <script>
+
+            var viewport = document.querySelector("meta[name=viewport]");
+            var viewport_scale = 1/window.devicePixelRatio
+
+            //        var x = 1/viewport_x;
+            if(viewport_scale < 0.5){
+                viewport_scale = 0.5;
+            }
+            //        console.log(viewport_scale)
+
+            viewport.setAttribute("content", "width=device-width, " +
+                "initial-scale=" + viewport_scale + ", maximum-scale=1.0, user-scalable=no")
+
+        </script>
 
     </head>
     <body>
@@ -19,8 +38,8 @@
         <![endif]-->
 
 
-        <div class="stair1_box clearfix">
-            <div id="the_header" class="stair1">
+        <!--<div class="stair1_box">-->
+        <div id="the_header" class="stair1">
                 <a id="logo" class="stair1_left logo_top">
                     <img class="my_fadein" src="img/logo.png" alt="logo">
                 </a>
@@ -60,7 +79,7 @@
                     }
                 </script>
             </div>
-        </div>
+        <!--</div>-->
         <div id="div1" class="main_box">
             <div class="main_header">
                 <div id="wrapper" class="stair2 my_fadein">
@@ -149,16 +168,16 @@
                 </h1>
 
                 <div class="body2_container">
-                    <a href="program1.html">
-                        <div class="program_card prepare_fadein">
+                    <a class="" href="program1.html">
+                        <div class="program_mobile program_mobile2 prepare_fadein">
                             <img src="img/shibi.jpg" alt="magicpaper">
                             <p class="program_card_title">
                                 The Legend of ‘Shi-Bi’
                             </p>
                         </div>
                     </a>
-                    <a href="program1.html">
-                        <div class="program_card prepare_fadein">
+                    <a class="" href="program1.html">
+                        <div class="program_mobile program_mobile2 prepare_fadein">
                             <img src="img/magicpaper.jpg" alt="magicpaper">
                             <p class="program_card_title">
                                 MagicPAPER
@@ -168,8 +187,8 @@
 
                 </div>
                 <div class="body2_container">
-                    <a href="program1.html">
-                        <div class="program_card prepare_fadein">
+                    <a class="" href="program1.html">
+                        <div class="program_mobile program_mobile2 prepare_fadein">
                             <img src="img/magicpaper.jpg" alt="magicpaper">
                             <p class="program_card_title">
                                 See your voice
@@ -177,8 +196,8 @@
                         </div>
                     </a>
 
-                    <a href="program1.html">
-                        <div class="program_card prepare_fadein">
+                    <a class="" href="program1.html">
+                        <div class="program_mobile program_mobile2 prepare_fadein">
                             <img src="img/object.jpg" alt="magicpaper">
                             <p class="program_card_title">
                                 Object Recognition
@@ -188,16 +207,16 @@
 
                 </div>
                 <div class="body2_container prepare_fadein">
-                    <a href="program1.html">
-                        <div class="program_card">
+                    <a class="" href="program1.html">
+                        <div class="program_mobile program_mobile2">
                             <img src="img/magicpaper.jpg" alt="magicpaper">
                             <p class="program_card_title">
                                 Table War
                             </p>
                         </div>
                     </a>
-                    <a href="program1.html">
-                        <div class="program_card">
+                    <a class="" href="program1.html">
+                        <div class="program_mobile program_mobile2">
                             <img src="img/magicpaper.jpg" alt="magicpaper">
                             <p class="program_card_title">
                                 Intelligent Smoke Alarm System with Wireless
@@ -210,16 +229,16 @@
 
                 </div>
                 <div class="body2_container display">
-                    <a href="program1.html">
-                        <div class="program_card ">
+                    <a class="" href="program1.html">
+                        <div class="program_mobile program_mobile2">
                             <img class="prepare_fadein" src="img/magicpaper.jpg" alt="magicpaper">
                             <p class="program_card_title">
                                 Table War
                             </p>
                         </div>
                     </a>
-                    <a href="program1.html">
-                        <div class="program_card">
+                    <a class="" href="program1.html">
+                        <div class="program_mobile program_mobile2">
                             <img src="img/magicpaper.jpg" alt="magicpaper">
                             <p class="program_card_title">
                                 Intelligent Smoke Alarm System with Wireless
@@ -232,16 +251,16 @@
 
                 </div>
                 <div class="body2_container display">
-                    <a href="program1.html">
-                        <div class="program_card">
+                    <a class="" href="program1.html">
+                        <div class="program_mobile">
                             <img src="img/magicpaper.jpg" alt="magicpaper">
                             <p class="program_card_title">
                                 Table War
                             </p>
                         </div>
                     </a>
-                    <a href="program1.html">
-                        <div class="program_card">
+                    <a class="" href="program1.html">
+                        <div class="program_mobile">
                             <img src="img/magicpaper.jpg" alt="magicpaper">
                             <p class="program_card_title">
                                 Intelligent Smoke Alarm System with Wireless
@@ -253,7 +272,6 @@
                     </a>
 
                 </div>
-
 
                 <h1 class="body2_stair2 button ">
                     <a id="program_more" class="prepare_fadein" href="javascript:">
@@ -478,8 +496,7 @@
                         <div class="body3_list prominent">
                             <div class="list_container">
                                 The 3rd Fengyungu Cup Internet + Innovation and Entrepreneurship Competition(2017)
-
-                                <div class="pub_more">
+                                <div class="pub_more2">
                                     <a href="javascript:">
                                         <!--<i class="iconfont icon-HCI"></i>-->
                                         <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
@@ -491,7 +508,7 @@
                         <div class="body3_list">
                             <div class="list_container">
                                 National Science Competition(2017)
-                                <div class="pub_more">
+                                <div class="pub_more2">
                                     <a href="javascript:">
                                         <!--<i class="iconfont icon-HCI"></i>-->
                                         <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
@@ -503,42 +520,12 @@
                         <div class="body3_list prominent">
                             <div class="list_container">
                                 Computer Application Design Competition(2017)
-
-                                <div class="pub_more">
+                                <div class="pub_more2">
                                     <a href="javascript:">
                                         <!--<i class="iconfont icon-HCI"></i>-->
                                         <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
                                         Program detail
                                     </a>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="body3_list">
-                            <div class="list_container">
-                                Computer Application Design Competition(2017)
-
-                                <div class="pub_more">
-                                    <a href="javascript:">
-                                        <!--<i class="iconfont icon-HCI"></i>-->
-                                        <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
-                                        Program detail
-                                    </a>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="body3_list prominent">
-                            <div class="list_container">
-                                Computer Application Design Competition(2017)
-
-                                <div class="pub_more">
-                                    <a href="javascript:">
-                                        <!--<i class="iconfont icon-HCI"></i>-->
-                                        <img class="paper_img" src="img/icon_detail.png" alt="icon_paper">
-                                        Program detail
-                                    </a>
-
                                 </div>
                             </div>
                         </div>
@@ -580,43 +567,43 @@
                         </div>
                         <div class="events_stair1_right">
                             <div class="event_item">
-                                <a href="event1.html">
+                                <a href="event.html">
                                     <p class="event_title">
-                                        MagicPAPER Group come to ACM SIGCHI DIS 2018!
+                                        UIST Student Innovation Contest
                                     </p>
                                 </a>
                                 <p class="event_time">
-                                    2018-06-13
+                                    2018-08-04
                                 </p>
                             </div>
                             <div class="event_item">
-                                <a href="event1.html">
+                                <a href="event2.html">
                                     <p class="event_title">
-                                        MagicPAPER Group come to ACM SIGCHI DIS 2018!
+                                        SUI &UIST Demonstration
                                     </p>
                                 </a>
                                 <p class="event_time">
-                                    2018-06-13
+                                    2018-08-26
                                 </p>
                             </div>
                             <div class="event_item">
-                                <a href="event1.html">
+                                <a href="event3.html">
                                     <p class="event_title">
-                                        MagicPAPER Group come to ACM SIGCHI DIS 2018!
+                                        ISS Demonstration
                                     </p>
                                 </a>
                                 <p class="event_time">
-                                    2018-06-13
+                                    2018-09-03
                                 </p>
                             </div>
                             <div class="event_item">
-                                <a href="event1.html">
+                                <a href="event4.html">
                                     <p class="event_title">
-                                        MagicPAPER Group come to ACM SIGCHI DIS 2018!
+                                        UXPA China Full paper
                                     </p>
                                 </a>
                                 <p class="event_time">
-                                    2018-06-13
+                                    2018-09-08
                                 </p>
                             </div>
                         </div>
@@ -700,7 +687,6 @@
                             $("#Events_more").on("click", function () {
                                 Events_num += 1;
                                 $(".body4_main_container").eq(Events_num).removeClass("display");
-
                             });
                         });
                     </script>
@@ -728,9 +714,9 @@
                         <p class="leader_name">
                             Wu Qin
                         </p>
-                        <p>
-                            of Computer Science, Chengdu University of Information Technology, China. She is also currently a Research Assistant with the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China.Her research interests include human-computer interaction, user experience, and interactive design.
-                        </p>
+                        <h1 class="leader_detial">
+                            Wu Qin received the B.A. degree in art design from the Chengdu University of Information Technology, China, in 2012,the M.F.A. degree in information arts and design from the Tsinghua University, Beijing, China, in 2016. She is currently a Lecturer with the Department of Computer Science, Chengdu University of Information Technology, China. She is also currently a Research Assistant with the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China. Her research interests include human-computer interaction, user experience, and interactive design.
+                        </h1>
                     </div>
                 </div>
                 <div class="body5_stair2">
@@ -872,20 +858,40 @@
                     </h1>
                 </div>
                 <div class="activities">
-                    <div class="activities_container prepare_fadein">
-                        <img src="img/activity3.jpg" alt="">
-                        <img src="img/activity2.jpg" alt="">
-                        <img src="img/activity1.jpg" alt="">
-                        <div class="shadow1">
-                             <span class="meeting">
-                            ANNUAL MEETING
-                            </span>
+                    <div class="activities_container prepare_fadein clearfix">
+                        <div class="act">
+                            <img src="img/activity1.jpg" alt="">
+                            <p class="meeting">
+                                <span>
+                                   HAPPY NEW YEAR
+                                </span>
+                            </p>
                         </div>
-                        <div class="shadow2">
-                            <span class="brainstrming">
-                                BRAINSTRMING
-                            </span>
+                        <div class="act">
+                            <img src="img/activity2.jpg" alt="">
+                            <p class="meeting">
+                                <span>
+                                   BRAINS STRMING
+                                </span>
+                            </p>
                         </div>
+                        <div class="act">
+                            <img src="img/activity3.jpg" alt="">
+                            <p class="meeting">
+                                <span>
+                                   ANNUAL MEETING
+                                </span>
+                            </p>
+                        </div>
+                        <!--<div class="shadow1">-->
+                             <!--<span class="meeting">-->
+                            <!--</span>-->
+                        <!--</div>-->
+                        <!--<div class="shadow2">-->
+                            <!--<span class="brainstrming">-->
+                                <!--BRAINSTRMING-->
+                            <!--</span>-->
+                        <!--</div>-->
 
                     </div>
                 </div>
