@@ -16,6 +16,8 @@
 }
 .prepare_fadein{
     opacity: 0;
+    position: relative;
+    top:10px;
 }
 
 /*#wrapper {*/

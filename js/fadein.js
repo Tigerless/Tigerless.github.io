@@ -20,7 +20,7 @@ $(document).ready(function() {
         for(var i = 0;i< all_fadein.length;i++){
             var targetHeight = all_fadein.eq(i).offset().top;
             if(!all_fadein.eq(i).data("opa")&&scrollTop>targetHeight-winHeight+100){
-                all_fadein.eq(i).animate({opacity:1,filter:'Alpha(opacity=90)'},500);
+                all_fadein.eq(i).animate({opacity:1,top:0,filter:'Alpha(opacity=90)'},500);
                 all_fadein.eq(i).data("opa",true);
 
             }
