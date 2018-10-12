@@ -16,6 +16,8 @@
 }
 .prepare_fadein{
     opacity: 0;
+    position: relative;
+    top:10px;
 }
 /*#wrapper {*/
     /*animation: fade-in;!*动画名称*!*/
@@ -45,8 +47,11 @@
 }
 
 .main_box{
-    background-color: #a0a0a0;
     min-width: 680px;
+    /*background: url("../img/bg1.jpg") no-repeat 100% 100%;*/
+    background: url("../img/bg1.jpg") no-repeat center;
+    background-size: cover;
+
 }
 .main_header{
     margin: 0 auto;
@@ -274,7 +279,7 @@
 
 .img_box img{
     max-width: 550px;
-    max-height: 350px;
+    /*max-height: 350px;*/
     padding: 30px 0;
 }
 

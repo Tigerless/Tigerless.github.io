@@ -1,17 +1,18 @@
 window.onload = function () {
     // var mytabs = $(".body3_item");
 
-    var mytab = $(".body3_item");
-
-    var Paper = $(".Paper");
-
-    var patent = $("#patent");
-    var copyright = $("#copyright");
-    var Awards = $("#Awards");
+    // var mytab = $(".body3_item");
+    //
+    // var Paper = $(".Paper");
+    //
+    // var patent = $("#patent");
+    // var copyright = $("#copyright");
+    // var Awards = $("#Awards");
 
     $(".header_items a").click(function () {
         $(this).addClass("choose").siblings().removeClass("choose");
     })
+
     $(".body3_item div").click(function () {
         var i = $(this).index();
         $(this).addClass("publication_choose").siblings().removeClass("publication_choose");
@@ -23,10 +24,6 @@ window.onload = function () {
         else {
             $("#Publications_more").hide()
         }
-
-
-
-
 
     })
 
